@@ -1,0 +1,16 @@
+.inputCadastro {
+    height: 15px;
+    width: 350px;
+    border: 1px solid rgb(9, 223, 141);
+    border-radius: 2px;
+    outline: none;
+}
+
+.DivINPUTcad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 800px;
+}

@@ -1,0 +1,8 @@
+.headerCadastro {
+    display: flex;
+}
+
+.headerLogin {
+    display: flex;
+    justify-content: center;
+}
