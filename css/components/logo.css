@@ -1,0 +1,10 @@
+.LogoRestaurante {
+    height: 130px;
+    z-index: 3;
+    transition: transform 135ms linear, opacity 230ms ease-in-out;
+}
+
+.LogoRestaurante:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}

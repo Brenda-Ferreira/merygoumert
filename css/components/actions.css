@@ -1,0 +1,15 @@
+.action {
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.action:hover {
+    color: #2ed573;
+}
+
+.action::before {}
