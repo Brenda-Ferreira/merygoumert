@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
 
-
+    <link rel="stylesheet" href="css/components/slider.css">
+  
 
     <link rel="stylesheet" href="css/reset.css">
 
@@ -41,4 +42,65 @@
     </header>
 </body>
 
-</html>
+
+
+<!--image slider start-->
+<section class="cor">
+<div class="slider">
+  <div class="slides">
+    <!--radio buttons start-->
+    <input class="input" type="radio" name="radio-btn" id="radio1">
+    <input class="input" type="radio" name="radio-btn" id="radio2">
+    <input class="input" type="radio" name="radio-btn" id="radio3">
+    <input class="input" type="radio" name="radio-btn" id="radio4">
+    <!--radio buttons end-->
+    <!--slide images start-->
+    <div class="slide first">
+      <img class="img"  src="assents/img/couple-1807617_1920.jpg" alt="">
+     
+    
+    </div>
+    <div class="slide">
+      <img  class="img" src="assents/img/restaurant-690975_1280.jpg" alt="">
+     
+    </div>
+    <div class="slide">
+      <img class="img" src="assents/img/brick-wall-1834784_1920.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img class="img" src="assents/img/kitchen-731351_1920.jpg" alt="">
+    </div>
+    <!--slide images end-->
+    <!--automatic navigation start-->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+    <!--automatic navigation end-->
+  </div>
+  <!--manual navigation start-->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+  <!--manual navigation end-->
+</div>
+</section>
+
+<!--image slider end-->
+
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 4){
+    counter = 1;
+  }
+}, 5000);
+</script>
+
