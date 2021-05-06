@@ -5,11 +5,12 @@
 .headerCabecalho {
     display: flex;
     justify-content: space-between;
-    background-color: #a4b0be;
+    background-color: #000;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
-    z-index: 2;
+    z-index: 90;
+    opacity: 0.9;
 }

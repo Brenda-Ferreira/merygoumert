@@ -1,0 +1,11 @@
+.CorpoHome {
+    background-image: url('https://lh3.googleusercontent.com/proxy/eYCeBqbMVxHlE1VpGRyYMMzsUXJjuGd55371VACf7yd23jJ3N-bYuTOQz8Ed8m3OqjnEl2k5F-Gttb_Kof9-I_dSVHVzbRa_yeWNo5g-sBMLsxYNSess4HkrsH6aIrllir5S2Ub8PHoa5V4YQg');
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.CorpoSobre {
+    text-align: center;
+    margin-top: 20px;
+}
