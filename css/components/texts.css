@@ -6,3 +6,17 @@
     margin-right: 10px;
     color: black;
 }
+
+.paragrafoMViVa {
+    padding-top: 30px;
+    position: relative;
+    left: -46px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 290ms ease-in-out;
+}
+
+.paragrafoMViVa:hover {
+    opacity: 1;
+}
