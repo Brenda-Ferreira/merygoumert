@@ -1,0 +1,27 @@
+.h1{
+
+    color: rgb(14, 8, 8);
+    text-align: center;
+    font-size: 150px;
+}
+
+.h1::after{
+
+    content: "|";
+    animation: pisca;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pisca{
+
+    0%,100%{
+
+        opacity: 1;
+    }
+
+    50%{
+
+        opacity: 0;
+    }
+}

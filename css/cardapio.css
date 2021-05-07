@@ -1,0 +1,199 @@
+.cor2{
+    margin: 50px;
+    background:#E6E8FA;
+}
+
+.imgcardapio1{
+    height: 150px;
+    border-radius: 1000px;
+    
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+  
+    
+}
+.imgcardapio2{
+    height: 150px;
+    border-radius: 1000px;
+  
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+ 
+    
+
+}
+.imgcardapio3{
+    height: 150px;
+    border-radius: 1000px;
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+ 
+   
+  
+}
+.textosimg{
+   
+    text-align: center;
+}
+.textosimg p {
+    font-size: 15px;
+}
+.imgcardapio4{
+    height: 150px;
+    border-radius: 1000px;
+    position: relative;
+    bottom: 40px;
+    left: 25%;
+    
+ 
+}
+.imgcardapio5{
+    height: 150px;
+    border-radius: 1000px;
+    position: relative;
+    bottom: 50px;
+    left: 22%;
+
+  
+}
+.imgcardapio6{
+    height: 130px;
+    border-radius: 1000px;
+    position: relative;
+    bottom: 50px;
+    left: 28%;
+ 
+   
+}
+
+.mais1{
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: 40%;
+}
+.mais2{
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: 40%;
+}
+.mais3{
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: 40%;
+}
+.mais4{
+    height: 50px;
+    position: relative;
+    top: 20px;
+    
+}
+.mais5{
+    height: 50px;
+    position: relative;
+    top: 20px;
+    
+}
+.mais6{
+    height: 50px;
+    position: relative;
+    top:40px;
+    
+}
+
+
+
+ .cardapio{
+    width: 1500px;
+    height: 800px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 100px;
+    display: flex;
+  
+   
+}
+.cardapio{
+    display: grid;
+    grid-gap:80px;
+    grid-template-areas: 
+     "item1 item2 item3"
+     "item4 item5 item6"
+    ;
+}
+.card1{
+    grid-area: item1;
+    width: 300px;
+    height: 350px;
+    border: 10px double rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px black;
+    background:rgb(204, 255, 128);
+    border-radius: 30px;
+   
+   
+    
+}
+.card2{
+    grid-area: item2;
+    width: 300px;
+    height: 350px;
+    border: 10px double rgb(246, 246, 246);
+    box-shadow: 10px 10px 10px black;
+    background:rgb(204, 255, 128);
+    border-radius: 30px;
+    
+    
+   
+}
+
+.card3{
+    grid-area: item3;
+    width: 300px;
+    height: 350px;
+    border: 10px double rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px black;
+    background: rgb(204, 255, 128);
+    border-radius: 30px;
+    
+}
+.card4{
+    grid-area: item4;
+    width: 300px;
+    height: 350px;
+    border: 10px double rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px black;
+    background: rgb(204, 255, 128);
+    border-radius: 30px;
+   
+   
+    
+}
+.card5{
+    grid-area: item5;
+    width: 300px;
+    height: 350px;
+    border: 10px double rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px black;
+    background:  rgb(204, 255, 128);
+    border-radius: 30px;
+    
+    
+   
+}
+
+.card6{
+    grid-area: item6;
+    width: 300px;
+    height: 350px;
+    border: 10px double rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px black;
+    background:  rgb(204, 255, 128);
+    border-radius: 30px;
+    
+}
+
