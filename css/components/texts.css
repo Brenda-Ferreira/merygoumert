@@ -20,3 +20,9 @@
 .paragrafoMViVa:hover {
     opacity: 1;
 }
+
+.paragrafoVip {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    z-index: 4;
+}
