@@ -33,17 +33,20 @@
 </head>
 
 <body>
+    <div id="Menu">
+
+    </div>
     <Div class="CorpoHome">
         <!--Cabeçalho-->
         <header class="headerCabecalho">
 
-            <a href="#">
+            <a href="#Menu" style="margin-left: 20px;" id="animaMenu">
                 <img class="LogoRestaurante" src="assents/img/Logo-removebg-preview.png">
             </a>
             <nav>
-                <a href="" class="action"> <i class="fas fa-gem" style="margin-right: 4px;"></i> Vip</a>
-                <a href="" class="action"> <i class="fas fa-bars" style="margin-right: 4px;"></i> Cardápio</a>
-                <a href="" class="action"> <i class="fas fa-ellipsis-v" style="margin-right: 4px;"></i> Sobre</a>
+                <a href="#Vip" class="action" id="animaVip"> <i class="fas fa-gem" style="margin-right: 4px;"></i> Vip</a>
+                <a href="#Cardapioo" class="action" id="animaCardapio"> <i class="fas fa-bars" style="margin-right: 4px;"></i> Cardápio</a>
+                <a href="#Sobre" class="action" id="animaSobre"> <i class="fas fa-ellipsis-v" style="margin-right: 4px;"></i> Sobre</a>
                 <a href="" class="action"> <i class="fas fa-headset" style="margin-right: 4px;"></i> Contatos</a>
                 <a href="" class="action"> <i class="fas fa-map-marked-alt" style="margin-right: 4px;"></i> Localização</a>
                 <a href="" class="action"><i class="fas fa-shopping-cart"></i></a>
@@ -103,11 +106,16 @@
     <!--image slider end-->
 
     <!--CorpoVip-->
-    <div class="CorpoVip">
+    <div class="CorpoVip" id="Vip">
         <nav class="navVip">
 
             <p class="paragrafoVip">Seja <br> Vip</p>
 
+            <div class="paragrafoDivVip">
+                <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Ganhe Brindes</p>
+                <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Prazos de Pagamento</p>
+                <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Sobremesas e sucos</p>
+            </div>
         </nav>
     </div>
     <!--Fim do Vip-->
@@ -115,112 +123,113 @@
 
 
     <!--Cardapio-->
-    <section class="imgfundo">
-        <div class="texto">
-           <h1 class="h1">CARDÁPIO</h1>
-          </div>
-          </section>
-      
-          <section class="cor2">
-      
-         
-      <section class="cardapio">
-        
-      
-      
-          <div class="card1">
-            <img class="imgcardapio1" src="assents/img/marmita p.png" alt="">
-            <div class="textosimg">
-            <h1>MARMITA P</h1>
-            <p>
-              Completa - Tamanho P
-            </p>
-          
+    <div id="Cardapioo">
+        <section class="imgfundo">
+            <div class="texto">
+                <h1 class="h1">CARDÁPIO</h1>
             </div>
-            <i class="fas fa-plus" style="margin-left: 80px;"></i>
-             </div>
-      
-          
-      
-        
-      
-        <div class="card2">
-          <img class="imgcardapio2" src="assents/img/marmita m.png" alt="">
-          <div class="textosimg">
-          <h1>MARMITA M</h1>
-          <p>
-             Completa - Tamanho M
-          </p>
-          </div>
-          <i class="fas fa-plus" style="margin-left: 90px;"></i>
-        </div>
-      
-      
-      <div class="card3">
-        <img class="imgcardapio3" src="assents/img/marmitex-g.png" alt="">
-        <div class="textosimg">
-        <h1>MARMITA G</h1>
-        <p>
-           Completa - Tamanho G
-        </p>
-      </div>
-      <i class="fas fa-plus" style="margin-left: 100px;"></i>
-      </div>
-      
-      
-        
-        
-        <div class="card4">
-          <img class="imgcardapio4" src="assents/img/salada-removebg-preview.png" alt="">
-          <div class="textosimg">
-          <h1>SALADA</h1>
-          <p>
-            Salada - Completa 
-          </p>
-         
-        </div>
-        <i class="fas fa-plus" style="margin-left: 80px;"></i>
-      </div>
-      
-      
-      <div class="card5">
-        <img class="imgcardapio5" src="assents/img/self 1 carne.png" alt="">
-        <div class="textosimg">
-        <h1>MARMITA 1</h1>
-        <p>
-         1 Opção de Carne
-        </p>
-        
-      </div>
-      <i class="fas fa-plus" style="margin-left: 90px;"></i>
-      </div>
-      
-      
-      <div class="card6">
-      <img class="imgcardapio6" src="assents/img/self 2 carnes.png" alt="">
-      <div class="textosimg">
-      <h1>MARMITA 2</h1>
-      <p>
-         2 Opções de Carne
-      </p>
-      
-      </div>
-      <i class="fas fa-plus" style="margin-left: 100px;"></i>
-      </div>
-      
-      
-      </div>
-      
-      
-      
-      
-      </section>
-      </section>
-      
+        </section>
+
+        <section class="cor2">
+
+
+            <section class="cardapio">
+
+
+
+                <div class="card1">
+                    <img class="imgcardapio1" src="assents/img/marmita p.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA P</h1>
+                        <p>
+                            Completa - Tamanho P
+                        </p>
+
+                    </div>
+                    <i class="fas fa-plus" style="margin-left: 80px;"></i>
+                </div>
+
+
+
+
+
+                <div class="card2">
+                    <img class="imgcardapio2" src="assents/img/marmita m.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA M</h1>
+                        <p>
+                            Completa - Tamanho M
+                        </p>
+                    </div>
+                    <i class="fas fa-plus" style="margin-left: 90px;"></i>
+                </div>
+
+
+                <div class="card3">
+                    <img class="imgcardapio3" src="assents/img/marmitex-g.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA G</h1>
+                        <p>
+                            Completa - Tamanho G
+                        </p>
+                    </div>
+                    <i class="fas fa-plus" style="margin-left: 100px;"></i>
+                </div>
+
+
+
+
+                <div class="card4">
+                    <img class="imgcardapio4" src="assents/img/salada-removebg-preview.png" alt="">
+                    <div class="textosimg">
+                        <h1>SALADA</h1>
+                        <p>
+                            Salada - Completa
+                        </p>
+
+                    </div>
+                    <i class="fas fa-plus" style="margin-left: 80px;"></i>
+                </div>
+
+
+                <div class="card5">
+                    <img class="imgcardapio5" src="assents/img/self 1 carne.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA 1</h1>
+                        <p>
+                            1 Opção de Carne
+                        </p>
+
+                    </div>
+                    <i class="fas fa-plus" style="margin-left: 90px;"></i>
+                </div>
+
+
+                <div class="card6">
+                    <img class="imgcardapio6" src="assents/img/self 2 carnes.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA 2</h1>
+                        <p>
+                            2 Opções de Carne
+                        </p>
+
+                    </div>
+                    <i class="fas fa-plus" style="margin-left: 100px;"></i>
+                </div>
+
+
+    </div>
+
+
+
+
+    </section>
+    </section>
+    </div>
 
     <!--Sobre nós-->
 
-    <div class="CorpoSobre">
+    <div class="CorpoSobre" id="Sobre">
         <section>
             <h1 class="titleSobre ">Sobre nós</h1>
             <p class="paragrafoSobre">
@@ -251,5 +260,9 @@
     <!--Fim do Sobre nós-->
 </body>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/cabecalho.js"></script>
 <script src="js/slide.js"></script>
 <script src="js/escrever.js"></script>

@@ -1,4 +1,4 @@
-.imgfundo{
+.imgfundo {
     background-image: url('../assents/img/fundo1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,192 +9,158 @@
     justify-content: center;
     align-items: center;
 }
-.imgfundo::before{
+
+.imgfundo::before {
     position: absolute;
-    
-   
     width: 100%;
     height: 400px;
     content: '';
-    background-color:rgba(0, 0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.texto{
-    position:absolute;
+
+.texto {
+    position: absolute;
     font-size: 50px;
     color: rgb(255, 255, 255);
-    
-  
-    
-    
 }
 
-.cor2{
+.cor2 {
     background: #d9d9d9;
+    margin-top: 8px;
 }
 
-.imgcardapio1{
+.imgcardapio1 {
     height: 120px;
     position: absolute;
     left: 40px;
-    
-    
 }
-.imgcardapio2{
+
+.imgcardapio2 {
     height: 120px;
     border-radius: 1000px;
     position: absolute;
     left: 10px;
-    
- 
-    
-
 }
-.imgcardapio3{
+
+.imgcardapio3 {
     height: 120px;
     border-radius: 1000px;
     position: absolute;
-    
- 
-   
-  
 }
-.textosimg{
+
+.textosimg {
     padding-top: 150px;
     text-align: center;
     font-size: 15px;
 }
 
-.textosimg h1{
+.textosimg h1 {
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-.imgcardapio4{
+.imgcardapio4 {
     height: 120px;
     border-radius: 1000px;
     position: absolute;
     left: 38px;
-    
-   
-    
- 
 }
-.imgcardapio5{
+
+.imgcardapio5 {
     height: 120px;
     border-radius: 1000px;
     position: absolute;
-   
-    left:30px;
-
-  
+    left: 30px;
 }
-.imgcardapio6{
+
+.imgcardapio6 {
     height: 110px;
     border-radius: 1000px;
-    position:absolute;
+    position: absolute;
     padding-top: 10px;
     left: 45px;
-    
- 
-   
 }
 
-
-
-
-
- .cardapio{
-    width: 1500px;
+.cardapio {
+    width: 1300px;
     height: 800px;
     margin: auto;
-    padding: 50px;
     border-radius: 100px;
     display: flex;
-  
-   
+    position: relative;
+    left: 5%;
+    padding-top: 50px;
+    padding-left: 30px;
 }
-.cardapio{
+
+.cardapio {
     display: grid;
-    grid-gap:20px;
-    grid-template-areas: 
-     "item1 item2 item3"
-     "item4 item5 item6"
-    ;
+    grid-gap: 20px;
+    grid-template-areas: "item1 item2 item3" "item4 item5 item6";
 }
-.card1{
+
+.card1 {
     grid-area: item1;
     width: 200px;
     height: 250px;
     position: relative;
     border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background:#d9d9d9;
+    background: #d9d9d9;
     border-radius: 30px;
-   
-   
-    
 }
-.card2{
+
+.card2 {
     grid-area: item2;
     width: 200px;
     height: 250px;
     position: relative;
     border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background:#d9d9d9;
+    background: #d9d9d9;
     border-radius: 30px;
-    
-    
-   
 }
 
-.card3{
+.card3 {
     grid-area: item3;
     width: 200px;
     height: 250px;
     position: relative;
     border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background:#d9d9d9;
+    background: #d9d9d9;
     border-radius: 30px;
-    
 }
-.card4{
+
+.card4 {
     grid-area: item4;
     width: 200px;
     height: 250px;
     position: relative;
     border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background:#d9d9d9;
+    background: #d9d9d9;
     border-radius: 30px;
-   
-   
-    
 }
-.card5{
+
+.card5 {
     grid-area: item5;
     width: 200px;
     height: 250px;
     position: relative;
     border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background:#d9d9d9;
+    background: #d9d9d9;
     border-radius: 30px;
-    
-    
-   
 }
 
-.card6{
+.card6 {
     grid-area: item6;
     width: 200px;
     height: 250px;
     position: relative;
     border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background:#d9d9d9;
+    background: #d9d9d9;
     border-radius: 30px;
-    
 }
-

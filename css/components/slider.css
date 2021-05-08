@@ -1,14 +1,17 @@
 .slider {
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-top: 170px;
     width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    left: 30%;
+    left: 25%;
 }
 
-.cor {}
+.cor {
+    padding-bottom: 20px;
+}
 
 .slides {
     width: 800%;
