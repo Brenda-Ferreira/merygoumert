@@ -1,174 +1,187 @@
-.cor2 {
-    margin: 50px;
-    background: #E6E8FA;
-}
-
-.imgcardapio1 {
-    height: 150px;
-    border-radius: 1000px;
+.imgfundo{
+    background-image: url('../assents/img/fundo2.jpg');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
     position: relative;
-    bottom: 50px;
-    left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgfundo::before{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    content: '';
+    background-color:rgba(0, 0,0, 0.5);
+}
+.texto{
+    position:absolute;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    
+  
+    
+    
 }
 
-.imgcardapio2 {
-    height: 150px;
+.cor2{
+    background: #d9d9d9;
+}
+
+.imgcardapio1{
+    height: 120px;
+    position: absolute;
+    left: 40px;
+    
+    
+}
+.imgcardapio2{
+    height: 120px;
     border-radius: 1000px;
-    position: relative;
-    bottom: 50px;
-    left: 50px;
-}
+    position: absolute;
+    left: 10px;
+    
+ 
+    
 
-.imgcardapio3 {
-    height: 150px;
+}
+.imgcardapio3{
+    height: 120px;
     border-radius: 1000px;
-    position: relative;
-    bottom: 50px;
-    left: 30px;
+    position: absolute;
+    
+ 
+   
+  
 }
-
-.textosimg {
+.textosimg{
+   padding-top: 120px;
     text-align: center;
-}
-
-.textosimg p {
     font-size: 15px;
 }
 
-.imgcardapio4 {
-    height: 150px;
+.imgcardapio4{
+    height: 120px;
     border-radius: 1000px;
-    position: relative;
-    bottom: 40px;
-    left: 25%;
+    position: absolute;
+    left: 38px;
+    
+   
+    
+ 
 }
-
-.imgcardapio5 {
-    height: 150px;
+.imgcardapio5{
+    height: 120px;
     border-radius: 1000px;
-    position: relative;
-    bottom: 50px;
-    left: 22%;
-}
+    position: absolute;
+   
+    left:30px;
 
-.imgcardapio6 {
-    height: 130px;
+  
+}
+.imgcardapio6{
+    height: 110px;
     border-radius: 1000px;
-    position: relative;
-    bottom: 50px;
-    left: 28%;
+    position:absolute;
+    padding-top: 10px;
+    left: 45px;
+    
 }
 
-.mais1 {
-    height: 50px;
-    position: relative;
-    top: 20px;
-    left: 40%;
-}
 
-.mais2 {
-    height: 50px;
-    position: relative;
-    top: 20px;
-    left: 40%;
-}
-
-.mais3 {
-    height: 50px;
-    position: relative;
-    top: 20px;
-    left: 40%;
-}
-
-.mais4 {
-    height: 50px;
-    position: relative;
-    top: 20px;
-}
-
-.mais5 {
-    height: 50px;
-    position: relative;
-    top: 20px;
-}
-
-.mais6 {
-    height: 50px;
-    position: relative;
-    top: 40px;
-}
-
-.cardapio {
-    width: 1300px;
+ .cardapio{
+    width: 1500px;
     height: 800px;
     margin: auto;
-    padding: 0px;
+    padding: 50px;
     border-radius: 100px;
     display: flex;
+  
+   
 }
-
-.cardapio {
+.cardapio{
     display: grid;
-    grid-gap: 80px;
-    grid-template-areas: "item1 item2 item3" "item4 item5 item6";
+    grid-gap:20px;
+    grid-template-areas: 
+     "item1 item2 item3"
+     "item4 item5 item6"
+    ;
 }
-
-.card1 {
+.card1{
     grid-area: item1;
-    width: 300px;
-    height: 350px;
-    border: 10px double rgb(255, 255, 255);
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background: rgb(204, 255, 128);
+    background:#d9d9d9;
     border-radius: 30px;
+   
+   
+    
 }
-
-.card2 {
+.card2{
     grid-area: item2;
-    width: 300px;
-    height: 350px;
-    border: 10px double rgb(246, 246, 246);
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background: rgb(204, 255, 128);
+    background:#d9d9d9;
     border-radius: 30px;
+    
+    
+   
 }
 
-.card3 {
+.card3{
     grid-area: item3;
-    width: 300px;
-    height: 350px;
-    border: 10px double rgb(255, 255, 255);
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background: rgb(204, 255, 128);
+    background:#d9d9d9;
     border-radius: 30px;
+    
 }
-
-.card4 {
+.card4{
     grid-area: item4;
-    width: 300px;
-    height: 350px;
-    border: 10px double rgb(255, 255, 255);
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background: rgb(204, 255, 128);
+    background:#d9d9d9;
     border-radius: 30px;
+   
+   
+    
 }
-
-.card5 {
+.card5{
     grid-area: item5;
-    width: 300px;
-    height: 350px;
-    border: 10px double rgb(255, 255, 255);
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background: rgb(204, 255, 128);
+    background:#d9d9d9;
     border-radius: 30px;
+    
+    
+   
 }
 
-.card6 {
+.card6{
     grid-area: item6;
-    width: 300px;
-    height: 350px;
-    border: 10px double rgb(255, 255, 255);
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border: 10px double #647937;
     box-shadow: 10px 10px 10px black;
-    background: rgb(204, 255, 128);
+    background:#d9d9d9;
     border-radius: 30px;
+    
 }
+
