@@ -1,6 +1,7 @@
 .imgfundo{
     background-image: url('../assents/img/fundo1.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     height: 400px;
     width: 100%;
     position: relative;
