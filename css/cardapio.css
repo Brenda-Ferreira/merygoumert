@@ -1,5 +1,5 @@
 .imgfundo{
-    background-image: url('../assents/img/fundo2.jpg');
+    background-image: url('../assents/img/fundo1.jpg');
     background-repeat: no-repeat;
     height: 400px;
     width: 100%;
@@ -10,6 +10,8 @@
 }
 .imgfundo::before{
     position: absolute;
+    
+   
     width: 100%;
     height: 400px;
     content: '';
@@ -56,9 +58,14 @@
   
 }
 .textosimg{
-   padding-top: 120px;
+    padding-top: 150px;
     text-align: center;
     font-size: 15px;
+}
+
+.textosimg h1{
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .imgcardapio4{
@@ -87,7 +94,12 @@
     padding-top: 10px;
     left: 45px;
     
+ 
+   
 }
+
+
+
 
 
  .cardapio{
