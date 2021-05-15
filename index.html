@@ -41,7 +41,8 @@
     <link rel="stylesheet" href="css/components/navegation.css">
     <link rel="stylesheet" href="css/components/sobre-nos2.css">
     <link rel="stylesheet" href="css/components/CONTATOS.CSS">
-    
+    <link rel="stylesheet" href="css/components/locailizacao.css">
+
 </head>
 
 <body>
@@ -249,7 +250,7 @@
     <!--Sobre nós-->
 
     <section class="imgfundomvv">
- 
+
 
         <section class="blocos">
             <div class="traco"></div>
@@ -283,63 +284,91 @@
         </section>
     </section>
     <section class="sobre-nos">
-       
+
         <div class="textossobre">
             <h1 class="h1prin">SOBRE<br/> NÓS</h1>
-            </div>
-     
+        </div>
+
         <div class="caixadetextop">
             <div class="caixas">
-            <p class="textosobre">
-              A Mary Gourmet atua no mercado há 15 anos, com funcionários
-               treinados e prontos para servi-lo a qualquer hora, respeitando 
-               as normas de higiene e qualidade do nossos produtos. O nosso dever
-                é garantir que o cliente esteja satisfeito com nosso atendimento e 
-                com a qualidade dos alimentos oferecidos pela marmitaria. Temos como
-                 missão sempre evoluir e crescer com o nossos clientes, 
-              com respeito e honestidade. Seja bem vindo a marmitaria Mary Gourmet!
-            </p>
-          </div>
+                <p class="textosobre">
+                    A Mary Gourmet atua no mercado há 15 anos, com funcionários treinados e prontos para servi-lo a qualquer hora, respeitando as normas de higiene e qualidade do nossos produtos. O nosso dever é garantir que o cliente esteja satisfeito com nosso atendimento
+                    e com a qualidade dos alimentos oferecidos pela marmitaria. Temos como missão sempre evoluir e crescer com o nossos clientes, com respeito e honestidade. Seja bem vindo a marmitaria Mary Gourmet!
+                </p>
             </div>
-          
-          </div>
-      </div>
-      </section>
-      <!--COMEÇO DOS CONTATOS-->
-      <section class="contatos">
-       
+        </div>
+
+
+
+    </section>
+    <!--COMEÇO DOS CONTATOS-->
+    <section class="contatos">
+
         <div class="imgcontato1"></div>
         <div class="imgcontato2"></div>
 
-       <h1 class="contatosh1">CONTATOS</h1>
+        <h1 class="contatosh1">CONTATOS</h1>
         <div class="formulario_forma">
-     
+
             <form class="formulario">
                 <p>NOME</p>
-                <input  class="input_contatos" type="text" name="nome" placeholder="Digite seu nome">
+                <input class="input_contatos" type="text" name="nome" placeholder="Digite seu nome">
 
                 <p>E-MAIL</p>
                 <input type="text" name="nome" placeholder="Digite seu email">
 
                 <p>MENSAGEM</p>
-               <textarea name="" id="" cols="30" rows="10">
+                <textarea name="" id="" cols="30" rows="10">
 
                </textarea>
-            
+
             </form>
             <button class="botao_form">ENVIAR</button>
         </div>
-           
+    </section>
 
-      <!--FIM DOS CONTATOS-->
+    <!--FIM DOS CONTATOS-->
+
+    <!--Localização-->
+
+    <div class="CorpoLocalização">
+        <section class="fundoLocalizaçao">
+
+            <h1 class="titleLocalizaçao">Localização <i class="fas fa-map-marker-alt"></i></h1>
+            <br>
+            <p class="paragrafoLocalizaçao">Rua R. João Gonçalves, 6-27 - <br> São Francisco, Cariacica - ES, <br>29145-387</p>
+
+            <!-- MAPA -->
+
+
+
+            <div style='overflow:hidden;height:480px;width:100%;color: #0095eb' class="corpoLoca">
+                <div id='gmap_canvas' style='height:480px;width:100%;'></div>
+                <style>
+                    #gmap_canvas img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                </style>
+            </div>
+
+
+
+            <!-- MAPA -->
+        </section>
+
+        <!--FIM DA LOCALIZAÇÃO-->
+    </div>
 </body>
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src='http://maps.google.com/maps/api/js?key=AIzaSyDv7YRz1WWPhkr6aim8wEm4WDPBdk81z54'></script>
 <script src="js/cabecalho.js"></script>
 <script src="js/slide.js"></script>
 <script src="js/escrever.js"></script>
+<script src="js/localizacao.js"></script>
 
 
 </html>

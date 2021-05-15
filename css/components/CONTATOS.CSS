@@ -1,101 +1,81 @@
-.contatos{
+.contatos {
     display: flex;
-    
-  }
-  
-  
-   .contatos::before{
+}
+
+.contatos::before {
     position: absolute;
-      
-     
     width: 100%;
     height: 600px;
     content: '';
     background-color: rgba(54, 75, 9, 0.548);
-   }
-  
-   
-   
-   
-   .imgcontato1{
-     background-image:url('/assents/img/marmita\ p.png');
-     background-repeat: no-repeat;
-   
-     
-     height: 500px;
-     width: 500px;
-    
-    
-  }
-  
-  .imgcontato1{
-    position: absolute;
-    
-    left: -200px;
-    
-  }
-  
-  .imgcontato2{
-    background-image: url('/assents/img/salada-removebg-preview.png');
+}
+
+.imgcontato1 {
+    background-image: url('/assents/img/marmita\ p.png');
     background-repeat: no-repeat;
-   
-    
     height: 500px;
     width: 500px;
-      
-  }
-  
-  .imgcontato2{
-    position:  absolute;
-  
-    
-   right:-250px;
-   
-  }
-  .formulario_forma{
+}
+
+.imgcontato1 {
+    position: absolute;
+    left: -200px;
+}
+
+.imgcontato2 {
+    background-image: url('/assents/img/salada-removebg-preview.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+}
+
+.imgcontato2 {
+    position: absolute;
+    right: -250px;
+}
+
+.formulario_forma {
     position: relative;
-  
-    left:-100px;
+    max-height: 450px;
+    left: -100px;
     top: 150px;
-  }
-  
-  .formulario{
+}
+
+.formulario {
     padding: 20px;
     height: 350px;
     width: 400px;
-   
-  }
-  .formulario p{
-    padding: 20px 0px  20px;
+}
+
+.formulario p {
+    padding: 20px 0px 20px;
     color: aliceblue;
-  }
-  .contatosh1{
+}
+
+.contatosh1 {
     position: relative;
     top: 20px;
     color: aliceblue;
     right: -420px;
-
     font-size: 100px;
-  }
-  
-  .formulario [type=text]{
-    border: 1px solid  rgb(255, 255, 255); 
+    max-height: 550;
+}
+
+.formulario [type=text] {
+    border: 1px solid rgb(255, 255, 255);
     width: 300px;
     outline: 0;
-    background-color:rgba(54, 75, 9, 0.548);
+    background-color: rgba(54, 75, 9, 0.548);
     border-radius: 10px;
-  }
-  
-  .formulario textarea{
+}
+
+.formulario textarea {
     border: 1px solid rgb(255, 255, 255);
     width: 300px;
     resize: none;
-    background-color:rgba(54, 75, 9, 0.548);
-  }
-  
-  .botao_form{
+    background-color: rgba(54, 75, 9, 0.548);
+}
+
+.botao_form {
     margin-left: 250px;
-    
-    
-  }
-  
+}

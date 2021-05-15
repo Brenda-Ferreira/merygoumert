@@ -10,8 +10,6 @@
     margin-top: 20px;
 }
 
-
-
 .CorpoVip {
     background: url('../assents/img/folhagem.png');
     background-repeat: no-repeat;
@@ -20,3 +18,5 @@
     z-index: 2;
     margin-top: 3px;
 }
+
+.CorpoLocalização {}

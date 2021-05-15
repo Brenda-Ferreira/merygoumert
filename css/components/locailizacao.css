@@ -1,0 +1,34 @@
+.titleLocalizaçao {
+    display: inline-block;
+    font-size: 40px;
+    padding-top: 90px;
+    padding-left: 130px;
+    position: relative;
+    top: 40px;
+}
+
+.paragrafoLocalizaçao {
+    font-size: 20px;
+    padding-left: 130px;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+
+.fundoLocalizaçao {
+    display: inline-block;
+    background-color: rgba(93, 161, 76, 0.747);
+    color: white;
+    width: 100%;
+    height: 510px;
+    text-align: justify;
+    position: relative;
+    top: 190px;
+}
+
+.corpoLoca {
+    position: relative;
+    top: -175px;
+    max-width: 66%;
+    left: 32%;
+}
