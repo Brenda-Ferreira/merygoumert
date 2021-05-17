@@ -1,28 +1,23 @@
-.h1{
-
+.h1 {
     color: rgb(255, 250, 250);
     text-align: center;
     font-size: 120px;
-    font-family:Maru,serif;
+    font-family: Maru, serif;
 }
 
-.h1::after{
-
+.h1::after {
     content: "|";
     animation: pisca;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
 }
 
-@keyframes pisca{
-
-    0%,100%{
-
+@keyframes pisca {
+    0%,
+    100% {
         opacity: 1;
     }
-
-    50%{
-
+    50% {
         opacity: 0;
     }
 }

@@ -4,6 +4,11 @@
     padding-top: 90px;
     padding-left: 130px;
     position: relative;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    color: rgba(93, 161, 76, 0.747);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
     top: 40px;
 }
 
@@ -23,7 +28,7 @@
     height: 510px;
     text-align: justify;
     position: relative;
-    top: 190px;
+    top: 188px;
 }
 
 .corpoLoca {

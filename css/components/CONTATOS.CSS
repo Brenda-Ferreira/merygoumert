@@ -1,10 +1,10 @@
-
-
 body {
     overflow-x: hidden;
-    }
+}
+
 .contatos {
     display: flex;
+    position: relative;
 }
 
 .contatos::before {
@@ -63,6 +63,11 @@ body {
     color: aliceblue;
     right: -420px;
     font-size: 100px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    color: rgba(100, 121, 55, 0.55);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
     max-height: 550;
 }
 

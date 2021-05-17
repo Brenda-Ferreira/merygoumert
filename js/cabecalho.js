@@ -35,12 +35,40 @@ $('#animaCardapio').click(function(e) {
 
 
     $('html, body').animate({
-        scrollTop: targetOffset - menuHeight
+        scrollTop: targetOffset - 135
     }, 500);
 
 });
 
 $('#animaSobre').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top,
+        menuHeight = $('nav').innerHeight();
+
+
+
+    $('html, body').animate({
+        scrollTop: targetOffset - 135
+    }, 500);
+
+});
+
+$('#animaContatos').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top,
+        menuHeight = $('nav').innerHeight();
+
+
+
+    $('html, body').animate({
+        scrollTop: targetOffset - 135
+    }, 500);
+
+});
+
+$('#animaLocalizacao').click(function(e) {
     e.preventDefault();
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top,
