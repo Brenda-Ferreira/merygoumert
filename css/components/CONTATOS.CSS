@@ -20,6 +20,7 @@ body {
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
+    display: block;
 }
 
 .imgcontato1 {
@@ -32,6 +33,7 @@ body {
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
+    display: block;
 }
 
 .imgcontato2 {
@@ -41,15 +43,15 @@ body {
 
 .formulario_forma {
     position: relative;
-    max-height: 450px;
-    left: -100px;
     top: 150px;
+    left: 150px;
 }
 
 .formulario {
     padding: 20px;
     height: 350px;
     width: 400px;
+   
 }
 
 .formulario p {
@@ -59,10 +61,10 @@ body {
 
 .contatosh1 {
     position: relative;
-    top: 20px;
+    top: 10px;
     color: aliceblue;
-    right: -420px;
-    font-size: 100px;
+    left: 800px;
+    font-size: 150px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 900;
     color: rgba(100, 121, 55, 0.55);
@@ -72,20 +74,159 @@ body {
 }
 
 .formulario [type=text] {
-    border: 1px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     width: 300px;
     outline: 0;
     background-color: rgba(54, 75, 9, 0.548);
     border-radius: 10px;
+    
 }
 
+
 .formulario textarea {
-    border: 1px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     width: 300px;
     resize: none;
     background-color: rgba(54, 75, 9, 0.548);
 }
 
 .botao_form {
+    margin-top: 10px;
     margin-left: 250px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1920px){
+    .formulario_forma {
+        position: relative;
+        top: 150px;
+        left: 50px;
+    }
+    .contatosh1 {
+        position: relative;
+        top: 20px;
+        color: aliceblue;
+        left: 700px;
+        font-size: 150px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 900;
+        color: rgba(100, 121, 55, 0.55);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFF;
+        max-height: 550;
+    }
+}
+
+    @media (max-width: 1680px){
+
+        .formulario_forma {
+            position: relative;
+            top: 150px;
+            left: -50px;
+        }
+        .contatosh1 {
+            position: relative;
+            top: 20px;
+            color: aliceblue;
+            left: 600px;
+            font-size: 150px;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: 900;
+            color: rgba(100, 121, 55, 0.55);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #FFF;
+            max-height: 550;
+        }
+
+    
+    
+}
+
+@media (max-width: 1440px){
+
+    .formulario_forma {
+        position: relative;
+        top: 150px;
+        left: -200px;
+    }
+    .contatosh1 {
+        position: relative;
+        top: 20px;
+        color: aliceblue;
+        left: 450px;
+        font-size: 150px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 900;
+        color: rgba(100, 121, 55, 0.55);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFF;
+        max-height: 550;
+    }
+
+
+
+}
+
+
+@media (max-width: 1024px){
+
+    .formulario_forma {
+        position: relative;
+        top: 100px;
+        left: 20px;
+    }
+    .contatosh1 {
+        position: relative;
+        top: 20px;
+        color: aliceblue;
+        left: 380px;
+        font-size: 80px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 900;
+        color: rgba(100, 121, 55, 0.55);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFF;
+        max-height: 550;
+    }
+
+
+
+}
+
+
+@media (max-width: 647px){
+
+    .formulario_forma {
+        position: relative;
+        top: 100px;
+        left: -250px;
+    }
+    .contatosh1 {
+        position: relative;
+        top: 20px;
+        color: aliceblue;
+        left: 100px;
+        font-size: 80px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 900;
+        color: rgba(100, 121, 55, 0.55);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFF;
+        max-height: 550;
+    }
+
+    .imgcontato2 {
+      background-image: none;
+    }
+
+    .imgcontato1 {
+        background-image: none;
+      }
+      
+    
+
+    
+   
+
+
 }
