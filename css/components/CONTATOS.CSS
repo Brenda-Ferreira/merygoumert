@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
-    display: block;
+    
 }
 
 .imgcontato1 {
@@ -33,7 +33,7 @@ body {
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
-    display: block;
+   
 }
 
 .imgcontato2 {
@@ -216,7 +216,7 @@ body {
     }
 
     .imgcontato2 {
-      background-image: none;
+       background-image: none;
     }
 
     .imgcontato1 {
