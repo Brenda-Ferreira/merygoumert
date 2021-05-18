@@ -1,17 +1,8 @@
-.paragrafoSobre {
-    font-size: 25px;
-    text-align: justify;
-    margin-top: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: black;
-}
-
 .paragrafoVip {
     color: rgb(255, 255, 255);
     font-size: 70px;
     z-index: 4;
-    margin-left: 320px;
+    margin-left: 370px;
 }
 
 .paragrafoDivVip {
@@ -20,10 +11,18 @@
     color: white;
     font-size: 40px;
     position: relative;
-    left: 20%;
+    left: 32%;
     margin-top: 20px;
 }
 
 .paragrafoVipSolo {
     margin-bottom: 25px;
+}
+
+.maozinha {
+    position: relative;
+    top: 60px;
+    left: 190px;
+    font-size: 80px;
+    color: white;
 }
