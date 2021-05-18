@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 body {
     overflow-x: hidden;
 }
@@ -43,26 +47,44 @@ body {
 
 .formulario_forma {
     position: relative;
+<<<<<<< Updated upstream
     top: 150px;
     left: 150px;
+=======
+    left: 20vh;
+    top: 150px;
+    
+    
+
+>>>>>>> Stashed changes
 }
 
 .formulario {
+    position: relative;
+    left: -5px;
     padding: 20px;
     height: 350px;
     width: 400px;
+<<<<<<< Updated upstream
    
+=======
+    
+     
+>>>>>>> Stashed changes
 }
 
 .formulario p {
     padding: 20px 0px 20px;
     color: aliceblue;
+    position: relative;
+    left: -28%;
 }
 
 .contatosh1 {
     position: relative;
     top: 10px;
     color: aliceblue;
+<<<<<<< Updated upstream
     left: 800px;
     font-size: 150px;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -71,11 +93,18 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFF;
     max-height: 550;
+=======
+     right: -40%;
+    font-size: 100px;
+    
+>>>>>>> Stashed changes
 }
 
 .formulario [type=text] {
     border: 3px solid rgb(255, 255, 255);
     width: 300px;
+    position: relative;
+    right: 30%;
     outline: 0;
     background-color: rgba(54, 75, 9, 0.548);
     border-radius: 10px;
@@ -87,10 +116,13 @@ body {
     border: 3px solid rgb(255, 255, 255);
     width: 300px;
     resize: none;
+    position: relative;
+    right: 30%;
     background-color: rgba(54, 75, 9, 0.548);
 }
 
 .botao_form {
+<<<<<<< Updated upstream
     margin-top: 10px;
     margin-left: 250px;
     border-radius: 10px;
@@ -229,4 +261,7 @@ body {
    
 
 
+=======
+    margin-left: 300px;
+>>>>>>> Stashed changes
 }
