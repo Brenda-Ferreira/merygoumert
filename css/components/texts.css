@@ -1,8 +1,10 @@
 .paragrafoVip {
     color: rgb(255, 255, 255);
-    font-size: 70px;
+    font-family: 'Medula One', cursive;
+    font-weight: 700;
+    font-size: 120px;
     z-index: 4;
-    margin-left: 370px;
+    margin-left: 340px;
 }
 
 .paragrafoDivVip {
@@ -21,8 +23,32 @@
 
 .maozinha {
     position: relative;
-    top: 60px;
-    left: 190px;
-    font-size: 80px;
+    top: 20px;
+    left: 60px;
+    font-size: 75px;
     color: white;
+    animation-name: fly;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes fly {
+    100% {
+        transform: translate(10px)
+    }
+}
+
+.imgvip {
+    height: 60px;
+    position: relative;
+    top: 15px;
+    left: 230px;
+    transition: transform 135ms linear, opacity 230ms ease-in-out;
+}
+
+.imgvip:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
 }

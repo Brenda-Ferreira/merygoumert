@@ -31,12 +31,9 @@
             background-image: url('/assents/img/saladagrudada.png');
             background-repeat: no-repeat;
             height: 500px;
-            width: 500px;
-        }
-        
-        .imgcontato2 {
+            width: 240px;
             position: absolute;
-            right: -262px;
+            left: 1241px;
         }
         
         .formulario_forma {
@@ -50,8 +47,7 @@
         .formulario {
             position: relative;
             left: -5px;
-            padding: 20px;
-            height: 350px;
+            height: 400px;
             width: 400px;
         }
         
@@ -96,9 +92,8 @@
         }
         
         .botao_form {
-            margin-top: 10px;
-            margin-left: 250px;
             border-radius: 10px;
+            margin-left: 145px;
         }
         
         @media (max-width: 1920px) {
