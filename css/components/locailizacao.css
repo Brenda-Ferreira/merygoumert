@@ -1,39 +1,46 @@
-.titleLocalizaçao {
-    display: inline-block;
-    font-size: 40px;
-    padding-top: 90px;
-    padding-left: 130px;
-    position: relative;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 900;
-    color: rgba(93, 161, 76, 0.747);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFF;
-    top: 40px;
-}
-
-.paragrafoLocalizaçao {
-    font-size: 20px;
-    padding-left: 130px;
-    justify-content: space-between;
-    position: relative;
-    top: 50px;
-}
-
-.fundoLocalizaçao {
-    display: inline-block;
-    background-color: rgba(93, 161, 76, 0.747);
-    color: white;
-    width: 100%;
-    height: 510px;
-    text-align: justify;
-    position: relative;
-    top: 173px;
-}
-
-.corpoLoca {
-    position: relative;
-    top: -175px;
-    max-width: 66%;
-    left: 32%;
-}
+        .titleLocalizaçao {
+            display: inline-block;
+            font-size: 40px;
+            padding-top: 90px;
+            padding-left: 130px;
+            position: relative;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: 900;
+            color: rgba(93, 161, 76, 0.747);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #FFF;
+            top: 40px;
+        }
+        
+        .paragrafoLocalizaçao {
+            font-size: 20px;
+            padding-left: 130px;
+            justify-content: space-between;
+            position: relative;
+            top: 50px;
+        }
+        
+        .fundoLocalizaçao {
+            display: inline-block;
+            background-color: rgba(93, 161, 76, 0.747);
+            color: white;
+            width: 100%;
+            height: 510px;
+            text-align: justify;
+            position: relative;
+            top: 173px;
+        }
+        
+        .corpoLoca {
+            position: relative;
+            top: -175px;
+            max-width: 66%;
+            left: 32%;
+        }
+        
+        @media (max-width: 1190px) {
+            .titleLocalizaçao {
+                position: relative;
+                left: 70px;
+            }
+        }
