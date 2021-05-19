@@ -1,0 +1,19 @@
+.FundoDireito {
+    position: relative;
+    background-image: url('/assents/img/fundoDireito.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    margin-top: 11px;
+}
+
+.paragrafoDireito {
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+    left: 32%;
+}
