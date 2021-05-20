@@ -99,9 +99,10 @@
         
         .formulario textarea {
             border: 3px solid rgb(255, 255, 255);
-            width: 300px;
+            width: 320px;
             resize: none;
             position: relative;
+            border-radius: 10px;
             left: 5%;
             background-color: rgba(54, 75, 9, 0.548);
             
