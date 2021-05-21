@@ -18,6 +18,8 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
+
 .texto {
     position: absolute;
     font-size: 50px;
@@ -82,8 +84,8 @@
 }
 
 .cardapio {
-    width: 1300px;
-    height: 800px;
+    width: 800px;
+    height: 700px;
     margin: auto;
     border-radius: 100px;
     display: flex;
@@ -163,4 +165,23 @@
     box-shadow: 10px 10px 10px black;
     background: #d9d9d9;
     border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+    .cardapio {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "item1"
+        "item2 "
+        "item3"
+        "item4 "
+        "item5"
+        "item6 ";
+    }
+
+    #Cardapioo{
+        height: 2200px;
+        background: #d9d9d9;
+    }
 }

@@ -43,14 +43,75 @@
 }
 
 .imgvip {
-    height: 60px;
+    display: block;
+    font-size: 60px;
     position: relative;
     top: 15px;
-    left: 230px;
+    left: 240px;
+    color: white;
     transition: transform 135ms linear, opacity 230ms ease-in-out;
 }
+
+.imglogo{
+    height: 100px;
+    
+}
+
+
+
 
 .imgvip:hover {
     transform: scale(1.15);
     opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .paragrafoVip {
+        color: rgb(255, 255, 255);
+        font-family: 'Medula One', cursive;
+        font-weight: 700;
+        font-size: 50px;
+        z-index: 4;
+        margin-left: 40px;
+    }
+    .maozinha {
+        position: relative;
+        top: 20px;
+        left: -15px;
+        font-size: 25px;
+        color: white;
+        animation-name: fly;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    .paragrafoDivVip {
+        display: block;
+        text-align: justify;
+        color: white;
+        font-size: 15px;
+        position: relative;
+        left: 65px;
+        margin-top: 40px;
+    }
+
+    .paragrafoVipSolo {
+        margin-bottom: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    .imgvip {
+        display: block;
+        font-size: 30px;
+        position: relative;
+        top: 15px;
+        left: 55px;
+        color: white;
+        transition: transform 135ms linear, opacity 230ms ease-in-out;
+    }
+
+    
+   
+    
 }

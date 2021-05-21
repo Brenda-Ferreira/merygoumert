@@ -112,3 +112,77 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+
+
+@media (max-width: 600px) {
+    .missao {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .visao {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 160px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .valores {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+         left: 300px;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+
+    .texto1 h1 {
+        padding-top: 10px;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-bottom: 8px;
+    }
+    .texto1 p {
+    font-size: 10px;
+    margin-left: 10px;
+    }
+
+    .texto2 h1 {
+        padding-top: 10px;
+        font-size: 20px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .texto2 p {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    
+
+    .texto3 h1 {
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.texto3 p {
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+
+.blocos {
+    position: relative;
+    left: 250px;
+   
+}
+
+
+
+
+
+}

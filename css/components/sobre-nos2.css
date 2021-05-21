@@ -37,3 +37,37 @@
     max-width: 400px;
     text-align: justify;
 }
+
+@media (max-width: 600px) {
+    .h1prin {
+        font-family: 'Medula One', cursive;
+        font-size: 60px;
+        padding-left: 20px;
+        margin-top: 60px;
+    }
+   
+  
+  .caixas {
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 15px;
+    width: 210px;
+    height: 280px;
+    border: 10px double #647937;
+    }
+
+
+    .textosobre {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        max-width: 400px;
+        text-align: justify;
+    }
+
+    .textosobre {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        max-width: 400px;
+        text-align: left;
+    }
+}

@@ -198,17 +198,17 @@
             }
         }
         
-        @media (max-width: 647px) {
+        @media (max-width: 600px) {
             .formulario_forma {
                 position: relative;
                 top: 100px;
-                left: -250px;
+                left: -320px;
             }
             .contatosh1 {
                 position: relative;
                 top: 20px;
                 color: aliceblue;
-                left: 100px;
+                left: 30px;
                 font-size: 80px;
                 font-family: 'Barlow Semi Condensed', sans-serif;
                 font-weight: 900;
