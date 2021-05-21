@@ -17,27 +17,3 @@
     top: 40px;
     left: 32%;
 }
-
-
-@media (max-width: 600px) {
-    .FundoDireito {
-        position: relative;
-        background-image: url('/assents/img/fundoDireito.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 125px;
-        width: 100%;
-        top: 35px;
-    }
-
-    .paragrafoDireito {
-        color:aqua;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        position: relative;
-        top: 60px;
-        left: 8%;
-    }
-    
-}
