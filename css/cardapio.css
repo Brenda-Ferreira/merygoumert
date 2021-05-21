@@ -18,8 +18,6 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
 .texto {
     position: absolute;
     font-size: 50px;
@@ -167,20 +165,111 @@
     border-radius: 30px;
 }
 
+@media (max-width: 1024px) {
+    .cardapio {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-areas: "item1 item2 item3 " " item4 item5 item6";
+        position: relative;
+        left: -2%;
+    }
+    #Cardapioo {
+        height: 1100px;
+        background: #d9d9d9;
+    }
+    .imgfundo::before {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .imgfundo {
+        background-image: url('../assents/img/fundo1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardapio {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-areas: "item1 item2" "item3 item4" " item5 item6";
+        position: relative;
+        left: 4%;
+    }
+    #Cardapioo {
+        height: 1300px;
+        background: #d9d9d9;
+    }
+    .imgfundo::before {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .imgfundo {
+        background-image: url('../assents/img/fundo1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 600px) {
     .cardapio {
         display: grid;
-        grid-gap: 20px;
-        grid-template-areas: 
-        "item1"
-        "item2 "
-        "item3"
-        "item4 "
-        "item5"
-        "item6 ";
+        grid-gap: 40px;
+        grid-template-areas: "item1" "item2 " "item3" "item4 " "item5" "item6 ";
+        position: relative;
+        left: 25%;
     }
+    #Cardapioo {
+        height: 2200px;
+        background: #d9d9d9;
+    }
+    .imgfundo::before {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .imgfundo {
+        background-image: url('../assents/img/fundo1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
-    #Cardapioo{
+@media (max-width: 360px) {
+    .cardapio {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-areas: "item1" "item2 " "item3" "item4 " "item5" "item6 ";
+        position: relative;
+        left: 10%;
+    }
+    #Cardapioo {
         height: 2200px;
         background: #d9d9d9;
     }

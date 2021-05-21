@@ -18,6 +18,47 @@
     left: 32%;
 }
 
+@media (max-width: 1024px) {
+    .FundoDireito {
+        position: relative;
+        background-image: url('/assents/img/fundoDireito.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 125px;
+        width: 100%;
+        top: 35px;
+    }
+    .paragrafoDireito {
+        color: aqua;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        position: relative;
+        top: 50px;
+        left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .FundoDireito {
+        position: relative;
+        background-image: url('/assents/img/fundoDireito.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 125px;
+        width: 100%;
+        top: 36px;
+    }
+    .paragrafoDireito {
+        color: aqua;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        position: relative;
+        top: 60px;
+        left: 15%;
+    }
+}
 
 @media (max-width: 600px) {
     .FundoDireito {
@@ -29,15 +70,34 @@
         width: 100%;
         top: 35px;
     }
-
     .paragrafoDireito {
-        color:aqua;
+        color: aqua;
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 500;
         font-size: 20px;
         position: relative;
         top: 60px;
-        left: 8%;
+        left: 20%;
     }
-    
+}
+
+@media (max-width: 360px) {
+    .FundoDireito {
+        position: relative;
+        background-image: url('/assents/img/fundoDireito.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 125px;
+        width: 100%;
+        top: 35px;
+    }
+    .paragrafoDireito {
+        color: aqua;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        position: relative;
+        top: 60px;
+        left: 2%;
+    }
 }

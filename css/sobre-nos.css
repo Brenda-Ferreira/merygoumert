@@ -113,31 +113,277 @@
     font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+    .missao {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        left: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .visao {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 355px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+    }
+    .valores {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 650px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 0;
+    }
+    .sobreh1 {
+        font-family: 'Schoolbell', cursive;
+        margin-left: 0;
+    }
+    .texto1 h1 {
+        padding-top: 10px;
+        font-size: 40px;
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+    .texto1 p {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .texto2 h1 {
+        padding-top: 10px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .texto2 p {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .texto3 h1 {
+        padding-top: 10px;
+        margin-left: 35px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .texto3 p {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .blocos {
+        position: relative;
+        left: -10px;
+    }
+    .imgfundomvv {
+        background-image: url('../assents/img/fundo\ 3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgfundomvv::before {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .missao {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        left: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .visao {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 285px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+    }
+    .valores {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 530px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 0;
+    }
+    .texto1 h1 {
+        padding-top: 10px;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-bottom: 8px;
+    }
+    .texto1 p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .texto2 h1 {
+        padding-top: 10px;
+        font-size: 25px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+    .texto2 p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .texto3 h1 {
+        padding-top: 10px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .texto3 p {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .blocos {
+        position: relative;
+        left: 60px;
+    }
+    .imgfundomvv {
+        background-image: url('../assents/img/fundo\ 3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 440px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgfundomvv::before {
+        position: absolute;
+        width: 100%;
+        height: 440px;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 
 @media (max-width: 600px) {
+    .missao {
+        height: 150px;
+        width: 150px;
+        position: relative;
+        left: -6px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .visao {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        left: 222px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+    }
+    .valores {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        left: 420px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 0;
+    }
+    .texto1 h1 {
+        padding-top: 10px;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-bottom: 8px;
+    }
+    .texto1 p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .texto2 h1 {
+        padding-top: 10px;
+        font-size: 25px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+    .texto2 p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .texto3 h1 {
+        padding-top: 10px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .texto3 p {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .blocos {
+        position: relative;
+        left: 150px;
+    }
+    .imgfundomvv {
+        background-image: url('../assents/img/fundo\ 3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgfundomvv::before {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width: 360px) {
     .missao {
         height: 100px;
         width: 100px;
         background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+        margin-left: 10px;
     }
-    
     .visao {
         height: 100px;
         width: 100px;
         position: absolute;
-        left: 160px;
+        left: 150px;
         background-color: rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
     }
-    
     .valores {
         height: 100px;
         width: 100px;
         position: absolute;
-         left: 300px;
+        left: 270px;
         background-color: rgba(0, 0, 0, 0.5);
-        
+        margin-right: 0;
     }
-
     .texto1 h1 {
         padding-top: 10px;
         font-size: 20px;
@@ -145,44 +391,50 @@
         margin-bottom: 8px;
     }
     .texto1 p {
-    font-size: 10px;
-    margin-left: 10px;
+        font-size: 10px;
+        margin-left: 10px;
     }
-
     .texto2 h1 {
         padding-top: 10px;
         font-size: 20px;
         margin-left: 25px;
         margin-bottom: 10px;
     }
-
     .texto2 p {
         font-size: 10px;
         margin-left: 10px;
     }
-    
-
     .texto3 h1 {
-    padding-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.texto3 p {
-    margin-left: 10px;
-    font-size: 10px;
-}
-
-
-.blocos {
-    position: relative;
-    left: 250px;
-   
-}
-
-
-
-
-
+        padding-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .texto3 p {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .blocos {
+        position: relative;
+        left: 250px;
+    }
+    .imgfundomvv {
+        background-image: url('../assents/img/fundo\ 3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgfundomvv::before {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }

@@ -33,6 +33,10 @@
     height: 500px;
 }
 
+.substSlide {
+    display: none;
+}
+
 
 /*css for manual slide navigation*/
 
@@ -112,4 +116,19 @@
 
 #radio4:checked~.navigation-auto .auto-btn4 {
     background: #40D3DC;
+}
+
+@media (max-width: 360px) {
+    .slider {
+        display: none;
+    }
+    .substSlide {
+        display: inline-block;
+        font-family: 'Medula One', cursive;
+        color: aqua;
+        font-size: 50px;
+        position: relative;
+        top: 260px;
+        margin-left: 30px;
+    }
 }

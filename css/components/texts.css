@@ -52,17 +52,105 @@
     transition: transform 135ms linear, opacity 230ms ease-in-out;
 }
 
-.imglogo{
+.imglogo {
     height: 100px;
-    
 }
-
-
-
 
 .imgvip:hover {
     transform: scale(1.15);
     opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+    .paragrafoVip {
+        color: rgb(255, 255, 255);
+        font-family: 'Medula One', cursive;
+        font-weight: 700;
+        font-size: 125px;
+        z-index: 4;
+        margin-left: 100px;
+    }
+    .maozinha {
+        position: relative;
+        top: 15px;
+        left: 10px;
+        font-size: 75px;
+        color: white;
+        animation-name: fly;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    .paragrafoDivVip {
+        display: block;
+        text-align: justify;
+        color: white;
+        font-size: 35px;
+        position: relative;
+        left: 205px;
+        margin-top: 50px;
+    }
+    .paragrafoVipSolo {
+        margin-bottom: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    .imgvip {
+        display: block;
+        font-size: 75px;
+        position: relative;
+        top: 15px;
+        left: 180px;
+        color: white;
+        transition: transform 135ms linear, opacity 230ms ease-in-out;
+    }
+}
+
+@media (max-width: 768px) {
+    .paragrafoVip {
+        color: rgb(255, 255, 255);
+        font-family: 'Medula One', cursive;
+        font-weight: 700;
+        font-size: 95px;
+        z-index: 4;
+        margin-left: 40px;
+    }
+    .maozinha {
+        position: relative;
+        top: 15px;
+        left: -20px;
+        font-size: 55px;
+        color: white;
+        animation-name: fly;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    .paragrafoDivVip {
+        display: block;
+        text-align: justify;
+        color: white;
+        font-size: 27px;
+        position: relative;
+        left: 165px;
+        margin-top: 50px;
+    }
+    .paragrafoVipSolo {
+        margin-bottom: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    .imgvip {
+        display: block;
+        font-size: 55px;
+        position: relative;
+        top: 15px;
+        left: 120px;
+        color: white;
+        transition: transform 135ms linear, opacity 230ms ease-in-out;
+    }
 }
 
 @media (max-width: 600px) {
@@ -70,14 +158,60 @@
         color: rgb(255, 255, 255);
         font-family: 'Medula One', cursive;
         font-weight: 700;
-        font-size: 50px;
+        font-size: 75px;
         z-index: 4;
         margin-left: 40px;
     }
     .maozinha {
         position: relative;
+        top: 15px;
+        left: 10px;
+        font-size: 45px;
+        color: white;
+        animation-name: fly;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    .paragrafoDivVip {
+        display: block;
+        text-align: justify;
+        color: white;
+        font-size: 20px;
+        position: relative;
+        left: 135px;
+        margin-top: 50px;
+    }
+    .paragrafoVipSolo {
+        margin-bottom: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    .imgvip {
+        display: block;
+        font-size: 45px;
+        position: relative;
+        top: 15px;
+        left: 120px;
+        color: white;
+        transition: transform 135ms linear, opacity 230ms ease-in-out;
+    }
+}
+
+@media (max-width: 360px) {
+    .paragrafoVip {
+        color: rgb(255, 255, 255);
+        font-family: 'Medula One', cursive;
+        font-weight: 700;
+        font-size: 50px;
+        z-index: 4;
+        margin-left: 20px;
+    }
+    .maozinha {
+        position: relative;
         top: 20px;
-        left: -15px;
+        left: -20px;
         font-size: 25px;
         color: white;
         animation-name: fly;
@@ -90,12 +224,11 @@
         display: block;
         text-align: justify;
         color: white;
-        font-size: 15px;
+        font-size: 14px;
         position: relative;
-        left: 65px;
-        margin-top: 40px;
+        left: 55px;
+        margin-top: 50px;
     }
-
     .paragrafoVipSolo {
         margin-bottom: 25px;
         font-family: 'Open Sans', sans-serif;
@@ -106,12 +239,8 @@
         font-size: 30px;
         position: relative;
         top: 15px;
-        left: 55px;
+        left: 47px;
         color: white;
         transition: transform 135ms linear, opacity 230ms ease-in-out;
     }
-
-    
-   
-    
 }

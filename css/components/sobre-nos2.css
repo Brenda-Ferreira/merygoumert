@@ -38,36 +38,136 @@
     text-align: justify;
 }
 
+@media (max-width: 1024px) {
+    .h1prin {
+        font-family: 'Medula One', cursive;
+        font-size: 140px;
+        padding-left: 0px;
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+    .caixas {
+        margin-top: 30px;
+        margin-right: 10px;
+        padding: 15px;
+        width: 400px;
+        height: 370px;
+        border: 10px double #647937;
+    }
+    .textosobre {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        max-width: 400px;
+        text-align: justify;
+    }
+    .textossobre {
+        width: 100%;
+        height: 500px;
+        content: '';
+        background: rgba(100, 121, 55, 0.55);
+    }
+    .caixadetextop {
+        width: 100%;
+        height: 500px;
+        content: '';
+        background: rgba(100, 121, 55, 0.55);
+    }
+}
+
+@media (max-width: 768px) {
+    .h1prin {
+        font-family: 'Medula One', cursive;
+        font-size: 110px;
+        padding-left: 0px;
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+    .caixas {
+        margin-top: 30px;
+        margin-right: 10px;
+        padding: 15px;
+        width: 300px;
+        height: 350px;
+        border: 10px double #647937;
+    }
+    .textosobre {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        max-width: 400px;
+        text-align: justify;
+    }
+    .textossobre {
+        width: 100%;
+        height: 500px;
+        content: '';
+        background: rgba(100, 121, 55, 0.55);
+    }
+    .caixadetextop {
+        width: 100%;
+        height: 500px;
+        content: '';
+        background: rgba(100, 121, 55, 0.55);
+    }
+}
+
 @media (max-width: 600px) {
     .h1prin {
         font-family: 'Medula One', cursive;
-        font-size: 60px;
-        padding-left: 20px;
+        font-size: 80px;
+        padding-left: 0px;
+        margin-left: 50px;
         margin-top: 60px;
     }
-   
-  
-  .caixas {
-    margin-top: 30px;
-    margin-right: 10px;
-    padding: 15px;
-    width: 210px;
-    height: 280px;
-    border: 10px double #647937;
+    .caixas {
+        margin-top: 30px;
+        margin-right: 10px;
+        padding: 15px;
+        width: 250px;
+        height: 230px;
+        border: 10px double #647937;
     }
-
-
     .textosobre {
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
         max-width: 400px;
         text-align: justify;
     }
-
     .textosobre {
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
         max-width: 400px;
         text-align: left;
+    }
+}
+
+@media (max-width: 360px) {
+    .h1prin {
+        font-family: 'Medula One', cursive;
+        font-size: 50px;
+        padding-left: 0px;
+        margin-left: 2px;
+        margin-top: 50px;
+        height: 180px;
+    }
+    .caixas {
+        margin-top: 30px;
+        margin-right: 6px;
+        padding: 15px;
+        width: 190px;
+        height: 250px;
+        border: 10px double #647937;
+    }
+    .textosobre {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        max-width: 400px;
+        height: 280px;
+        text-align: justify;
+    }
+    .textossobre {
+        width: 100%;
+        height: 500px;
+        content: '';
+        background: rgba(100, 121, 55, 0.55);
     }
 }

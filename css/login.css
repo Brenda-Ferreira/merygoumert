@@ -16,7 +16,6 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-top: 100px;
-  
 }
 
 main {
@@ -90,49 +89,41 @@ img {
 
 @media (max-width:1920px) {
     .container {
-       margin-left: 130px;
+        margin-left: 130px;
     }
- 
 }
 
 @media (max-width:1680px) {
     .container {
         margin-left: 10px;
     }
- 
 }
 
 @media (max-width:1440px) {
     .container {
         margin-left: 50px;
     }
-    img{
+    img {
         height: 400px;
         margin: auto;
     }
-    main{
-       height: 650px;
+    main {
+        height: 650px;
     }
- 
 }
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
     main {
         width: 400px;
         height: 600px;
-     
     }
-    img{
-      
+    img {
         height: 300px;
-    
     }
     .dentro h1 {
         font-size: 50px;
         margin-left: 105px;
-      
     }
-
     form input[type="email"] {
         margin-left: 50px;
     }
@@ -142,66 +133,44 @@ img {
     form input[type="submit"] {
         margin-left: 50px;
     }
-
     p {
         margin-left: 50px;
     }
-
     button {
         margin-left: 50px;
     }
-
- 
-
-   
 }
 
-
-@media (max-width:667px){
-   
-      
-.dentro h1 {
-    font-size: 50px;
-    margin-bottom: 50px;
-    margin-left: 40px;
+@media (max-width:667px) {
+    .dentro h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+        margin-left: 40px;
+    }
+    main {
+        width: 500px;
+        height: 500px;
+    }
+    img {
+        height: 0px;
+    }
+    .container {
+        margin-right: 150px;
+    }
+    form input[type="email"] {
+        margin-left: 10px;
+    }
+    form input[type="password"] {
+        margin-left: 10px;
+    }
+    form input[type="submit"] {
+        margin-left: 10px;
+    }
+    p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    button {
+        margin-left: 10px;
+    }
 }
-
-main {
-    width: 500px;
-    height: 500px;
-   
-    
-}
-   img{
-       height: 0px;
-   } 
-.container{
-    margin-right: 150px;
-}
-
-form input[type="email"] {
-    margin-left: 10px;
-}
-form input[type="password"] {
-    margin-left: 10px;
-}
-
-form input[type="submit"] {
-    margin-left: 10px;
-}
-
-p {
-    font-size: 12px;
-    margin-left: 10px;
-}
-
-button {
-    margin-left: 10px;
-}
-
-   
-}
-
-
-
-
