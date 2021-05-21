@@ -17,3 +17,56 @@
     z-index: 90;
     opacity: 0.9;
 }
+
+.menuMobile {  /*  as linhas do menu */
+	display:none; /* QUANDO NAO TIVER NO CELULAR NÃO IRA APARECER*/
+	width:40px; /* são as linhas do menu*/
+	height:40px;
+	margin-top:40px;
+	margin-bottom:40px;
+	margin-right:20px;
+}
+
+.mm_line { /* SÃO AS LINHAS DO MENU*/
+	height:3px; 
+	background-color:#39aae1;
+}
+
+
+
+@media (max-width:600px) 
+{
+
+    header .headerCabecalho { /* PARA O MENU   FICAR EM LINHAS / RESPONSIVO*/
+		flex-direction: row;
+	}
+
+	nav .a1{
+		flex-direction: column; /* para ficar um embaixo do outro */
+		display:none; /* para não aparece  */
+		position: absolute; /* o elemento flutuo e jogamos para esquerda */
+	    left: 0; /* PARA DEIXAR BEM COLADO     */
+	    width: 100%; /* oculpou todo espaço disponivel */
+        height: 300px;
+        color: rgb(255, 255, 255);
+	    background-color: #cc0404;
+	}
+
+ 
+
+  
+
+	header {
+		height:auto;  /*  tiramos a altura dele, para o menu tomar o lugar   */
+	}
+	.Menu {
+		padding-left:20px;
+	}
+
+	.menuMobile {
+		display:flex; /* para poder colocar no meio */
+		flex-direction: column; /* PARA FICAR UM ABAIXO DO OUTRO */
+		justify-content:space-around; /* para espaçar igualmente entre eles */
+	}
+
+} /* a partir DESSA LARGURA daqui ele ira aplicar */

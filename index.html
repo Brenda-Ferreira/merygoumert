@@ -50,6 +50,21 @@
     <link rel="stylesheet" href="css/components/direito.css">
 
 
+    <script type="text/javascript">
+        window.onload = function(){ 
+            document.querySelector(".menuMobile").addEventListener("click", function(){ // ao clicar
+                if(document.querySelector(" nav .action").style.display == 'flex') { // QUER DIZER QUE ELE ESTA APARECENDO
+                    // se ele estive aparecendo
+                    document.querySelector(" nav .action").style.display = 'none';
+                    // ele irá sumir 
+                } else {
+                    // se não 
+                    document.querySelector("nav .action").style.display = 'flex';
+                    // ele vai aparecer 
+                }
+            });
+        };
+        </script>
 
 
 </head>
@@ -62,6 +77,7 @@
         </div>
         <Div class="CorpoHome">
             <!--Cabeçalho-->
+            
             <header class="headerCabecalho">
 
                 <a href="#Menu" style="margin-left: 20px;" id="animaMenu">
@@ -70,14 +86,19 @@
                 <nav>
 
 
-
-                    <a href="#Vip" class="action" id="animaVip"> <i class="fas fa-gem" style="margin-right: 4px;"></i> Vip</a>
-                    <a href="#Cardapioo" class="action" id="animaCardapio"> <i class="fas fa-bars" style="margin-right: 4px;"></i> Cardápio</a>
-                    <a href="#Sobre" class="action" id="animaSobre"> <i class="fas fa-ellipsis-v" style="margin-right: 4px;"></i> Sobre</a>
-                    <a href="#Contatoss" class="action" id="animaContatos"> <i class="fas fa-headset" style="margin-right: 4px;"></i> Contatos</a>
-                    <a href="#Localização" class="action" id="animaLocalizacao"> <i class="fas fa-map-marked-alt" style="margin-right: 4px;"></i> Localização</a>
-                    <a href="" class="action"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="" class="action"><i class="fas fa-sign-in-alt"></i></a>
+                             <!--MENU RESPONSIVO-->
+				<div class="menuMobile">
+					<div class="mm_line"></div> <!--isso sera o menu, aquele tres linhas-->
+					<div class="mm_line"></div><!--LINHAS-->
+					<div class="mm_line"></div><!--LINHAS-->
+				</div>
+                    <a href="#Vip" class="action" id="animaVip"> <i class="fas fa-gem " style="margin-right: 4px;"></i> Vip</a>
+                    <a href="#Cardapioo" class="action" id="animaCardapio"> <i class="fas fa-bars " style="margin-right: 4px;"></i> Cardápio</a>
+                    <a href="#Sobre" class="action" id="animaSobre"> <i class="fas fa-ellipsis-v " style="margin-right: 4px;"></i> Sobre</a>
+                    <a href="#Contatoss" class="action " id="animaContatos"> <i class="fas fa-headset " style="margin-right: 4px;"></i> Contatos</a>
+                    <a href="#Localização" class="action " id="animaLocalizacao"> <i class="fas fa-map-marked-alt " style="margin-right: 4px;"></i> Localização</a>
+                    <a href="" class="action "><i class="fas fa-shopping-cart "></i></a>
+                    <a href="" class="action"><i class="fas fa-sign-in-alt "></i></a>
                 </nav>
             </header>
             <!--Fim do Cabeçalho-->
