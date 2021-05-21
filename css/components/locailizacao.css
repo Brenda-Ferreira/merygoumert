@@ -44,3 +44,36 @@
                 left: 70px;
             }
         }
+
+
+        @media (max-width: 600px) {
+            .titleLocalizaçao {
+                display: inline-block;
+                font-size: 30px;
+                font-family: 'Barlow Semi Condensed', sans-serif;
+                font-weight: 900;
+                color: rgba(93, 161, 76, 0.747);
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #FFF;
+                position: relative;
+                top: 40px;
+                left: -120px;
+            }
+
+            .corpoLoca {
+                position: relative;
+                top: -125px;
+                max-width: 50%;
+                max-height: 50%;
+                left: 48%;
+            }
+
+            .paragrafoLocalizaçao {
+                font-size: 15px;
+                padding-left: 10px;
+                justify-content: space-between;
+                position: relative;
+                top: 50px;
+            }
+            
+        }
