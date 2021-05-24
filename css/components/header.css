@@ -28,7 +28,7 @@
 }
 
 .imglogoA {
-    margin-right: 0px;
+    margin-left: 10px;
 }
 
 .container {
@@ -38,6 +38,7 @@
     /* PARA FICAR UM LONGE DO OUTRO , CADA UM NO SEU CANTO*/
     width: 580px;
     /*largura */
+    margin-left: 10px;
 }
 
 .menu {
@@ -147,6 +148,8 @@
     .logo {
         padding-left: 20px;
     }
+   
+    
     .menuMobile {
         display: flex;
         /* para poder colocar no meio */
