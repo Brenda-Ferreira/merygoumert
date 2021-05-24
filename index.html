@@ -49,1122 +49,1158 @@
     <link rel="stylesheet" href="css/components/modal.css">
     <link rel="stylesheet" href="css/components/direito.css">
 
-
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function() { // ao clicar
+                if (document.querySelector(".menu .nav .ul").style.display == 'flex') { // QUER DIZER QUE ELE ESTA APARECENDO
+                    // se ele estive aparecendo
+                    document.querySelector(".menu .nav .ul").style.display = 'none';
+                    // ele irá sumir 
+                } else {
+                    // se não 
+                    document.querySelector(".menu .nav .ul").style.display = 'flex';
+                    // ele vai aparecer 
+                }
+            });
+        };
+    </script>
 
 
 </head>
 
 <body>
 
-    <div class="container">
-        <div id="Menu">
 
-        </div>
-        <Div class="CorpoHome">
-            <!--Cabeçalho-->
-            <header class="headerCabecalho">
+    <div id="MenuHref">
 
-                <a href="#Menu" style="margin-left: 20px;" id="animaMenu">
-                    <img class="LogoRestaurante" src="assents/img/Logo-removebg-preview.png">
-                </a>
-                <nav>
+    </div>
+    <div class="CorpoHome">
+        <header class="header">
+            <!--TAG DE ESTRUTURAÇÃO-->
 
 
+            <!--AREA PARA A LOGO -->
+            <a class="imglogoA" href="#MenuHref" id="animaMenu">
+                <img class="imgLogo" src="assents/img/Logo-removebg-preview.png" />
+            </a>
+            <!--QUANDO CLICAR NA LGO 
+            IRÁ PARA PACINA INICIAL -->
 
-                    <a href="#Vip" class="action" id="animaVip"> <i class="fas fa-gem" style="margin-right: 4px;"></i> Vip</a>
-                    <a href="#Cardapioo" class="action" id="animaCardapio"> <i class="fas fa-bars" style="margin-right: 4px;"></i> Cardápio</a>
-                    <a href="#Sobre" class="action" id="animaSobre"> <i class="fas fa-ellipsis-v" style="margin-right: 4px;"></i> Sobre</a>
-                    <a href="#Contatoss" class="action" id="animaContatos"> <i class="fas fa-headset" style="margin-right: 4px;"></i> Contatos</a>
-                    <a href="#Localização" class="action" id="animaLocalizacao"> <i class="fas fa-map-marked-alt" style="margin-right: 4px;"></i> Localização</a>
-                    <a href="" class="action"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="" class="action"><i class="fas fa-sign-in-alt"></i></a>
-                </nav>
-            </header>
-            <!--Fim do Cabeçalho-->
+            <div class="container">
+                <!--A AREA QUE IRA FICAR A LOGO E O MENU-->
 
-
-
-            <!--image slider start-->
-
-            <h1 class="substSlide">Sejam Bem-Vindos a Mary Gourmet!</h1>
-
-            <section class="cor">
-                <div class="slider">
-                    <div class="slides">
-                        <!--radio buttons start-->
-                        <input class="input" type="radio" name="radio-btn" id="radio1">
-                        <input class="input" type="radio" name="radio-btn" id="radio2">
-                        <input class="input" type="radio" name="radio-btn" id="radio3">
-                        <input class="input" type="radio" name="radio-btn" id="radio4">
-                        <!--radio buttons end-->
-                        <!--slide images start-->
-                        <div class="slide first">
-                            <!-- nada e nada-->
-                            <img class="img" src="assents/img/couple-1807617_1920.jpg" alt="">
-
-
+                <div class="menu">
+                    <!--AREA DO MENU, AQUELE COM OS NOMES, INICIO,SOBRE-->
+                    <nav class="nav">
+                        <!-- PARA NAVEGAÇÃO , PARA MENU-->
+                        <!--MENU RESPONSIVO-->
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <!--isso sera o menu, aquele tres linhas-->
+                            <div class="mm_line"></div>
+                            <!--LINHAS-->
+                            <div class="mm_line"></div>
+                            <!--LINHAS-->
                         </div>
-                        <div class="slide">
-                            <img class="img" src="assents/img/restaurant-690975_1280.jpg" alt="">
-
-                        </div>
-                        <div class="slide">
-                            <img class="img" src="assents/img/brick-wall-1834784_1920.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img class="img" src="assents/img/kitchen-731351_1920.jpg" alt="">
-                        </div>
-                        <!--slide images end-->
-                        <!--automatic navigation start-->
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn4"></div>
-                        </div>
-                        <!--automatic navigation end-->
-                    </div>
-                    <!--manual navigation start-->
-                    <div class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
-                    </div>
-                    <!--manual navigation end-->
+                        <ul class="ul">
+                            <!--MENU SEM RESPONSIVO-->
+                            <li class="active"><a class="link" href="#MenuHref" id="animaMenu2">HOME</a></li>
+                            <!--active sera como estivesse
+                        selecionado -->
+                            <!-- essa lista sera de links e tbm menu-->
+                            <li class="li"><a class="link" href="#Vip" id="animaVip">ViP</a></li>
+                            <li class="li"><a class="link" href="#Cardapioo" id="animaCardapio">SOBRE</a></li>
+                            <li class="li"><a class="link" href="#Sobre" id="animaSobre">ENDEREÇO</a></li>
+                            <li class="li"><a class="link" href="#Contatoss" id="animaContatos">CONTATO</a></li>
+                            <li class="li"><a class="link" href="#Localização" id="animaLocalizacao">LOCALIZAÇÃO</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </section>
-        </Div>
-        <!--image slider end-->
+            </div>
+        </header>
 
-        <!--CorpoVip-->
-        <div class="CorpoVip" id="Vip">
-            <nav class="navVip">
 
-                <p class="paragrafoVip">Seja <br> &nbsp; Vip</p>
-                <a href="https://api.whatsapp.com/send?phone=5527996409749&text=QUERO%20SER%20VIP%20" target="_blank" class="imgvip">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <i class="fas fa-hand-point-right maozinha"></i>
-                <div class="paragrafoDivVip">
-                    <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Ganhe Brindes</p>
-                    <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Prazos de Pagamento</p>
-                    <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Sobremesas e sucos</p>
+        <!--image slider start-->
+
+        <h1 class="substSlide">Sejam Bem-Vindos a Mary Gourmet!</h1>
+
+        <section class="cor">
+            <div class="slider">
+                <div class="slides">
+                    <!--radio buttons start-->
+                    <input class="input" type="radio" name="radio-btn" id="radio1">
+                    <input class="input" type="radio" name="radio-btn" id="radio2">
+                    <input class="input" type="radio" name="radio-btn" id="radio3">
+                    <input class="input" type="radio" name="radio-btn" id="radio4">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <!-- nada e nada-->
+                        <img class="img" src="assents/img/couple-1807617_1920.jpg" alt="">
+
+
+                    </div>
+                    <div class="slide">
+                        <img class="img" src="assents/img/restaurant-690975_1280.jpg" alt="">
+
+                    </div>
+                    <div class="slide">
+                        <img class="img" src="assents/img/brick-wall-1834784_1920.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="img" src="assents/img/kitchen-731351_1920.jpg" alt="">
+                    </div>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--automatic navigation end-->
                 </div>
-            </nav>
-        </div>
-        <!--Fim do Vip-->
-
-
-
-        <!--Cardapio-->
-        <div id="Cardapioo">
-            <section class="imgfundo">
-                <div class="texto">
-                    <h1 class="h1">CARDÁPIO</h1>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
-            </section>
-
-            <section class="cor2">
-
-
-                <section class="cardapio">
-
-
-
-                    <div class="card1">
-                        <img class="imgcardapio1" src="assents/img/marmita p.png" alt="">
-                        <div class="textosimg">
-                            <h1>MARMITA P</h1>
-                            <p>
-                                Completa - Tamanho P
-                            </p>
-                        </div>
-
-
-
-                        <i id="botaomais" class="  fas fa-plus  " style="margin-left: 90px; margin-top: 20px;"></i>
-
-                        <div class="modal">
-                            <div class="modal-content">
-                                <div class="conteudo-modal">
-                                    <h1>MARMITA P - R$ 16,00</h1>
-                                    <div class="tarja-verde1">
-                                        <h2>PROTEÍNAS</h2>
-                                        <p>Pode escolher até 2 opções</p>
-                                    </div>
-
-                                    <div class="opcao-proteinas">
-
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Peito de frango em cubos</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de boi</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Omelete</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Estrogonofe</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de Fígado</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Carne</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Frango</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Carne Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Grelhado</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Xadrez</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde2">
-                                        <h2>CARBOIDRATOS</h2>
-                                        <p>Pode escolher todos</p>
-                                    </div>
-                                    <div class="opcao-carboidratos">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Arroz Branco</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Feijão</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Farofa</label>
-
-
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Batata</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Aimpim</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Macarrão</label>
-                                            <br/>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde3">
-                                        <h2>SALADA</h2>
-                                        <p>Pode escolher até 5 opções</p>
-                                    </div>
-                                    <div class="opcao-salada">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Tomate</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Pepino</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Repolho</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Cenoura Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Manga</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Brócolis</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Vagem Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Batata Frita</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="botaos-modal">
-                                        <i class="far fa-times-circle" style="margin-right: 20px;"></i>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </div>
-                                </div>
-                                <button class="close-modal">&times;</button>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-                    <div class="card2">
-                        <img class="imgcardapio2" src="assents/img/marmita m.png" alt="">
-                        <div class="textosimg">
-                            <h1>MARMITA M </h1>
-                            <p>
-                                Completa - Tamanho M
-                            </p>
-                        </div>
-
-
-
-                        <i id="botaomais2" class=" fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
-
-                        <div class="modal2">
-                            <div class="modal-content">
-                                <div class="conteudo-modal">
-                                    <h1>MARMITA M - R$ 18,00</h1>
-                                    <div class="tarja-verde1">
-                                        <h2>PROTEÍNAS</h2>
-                                        <p>Pode escolher até 2 opções</p>
-                                    </div>
-                                    <div class="opcao-proteinas">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Peito de frango em cubos</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de boi</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Omelete</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Estrogonofe</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de Fígado</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Carne</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Frango</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Carne Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Grelhado</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Xadrez</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde2">
-                                        <h2>CARBOIDRATOS</h2>
-                                        <p>Pode escolher todos</p>
-                                    </div>
-                                    <div class="opcao-carboidratos">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Arroz Branco</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Feijão</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Farofa</label>
-
-
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Batata</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Aimpim</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Macarrão</label>
-                                            <br/>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde3">
-                                        <h2>SALADA</h2>
-                                        <p>Pode escolher até 5 opções</p>
-                                    </div>
-                                    <div class="opcao-salada">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Tomate</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Pepino</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Repolho</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Cenoura Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Manga</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Brócolis</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Vagem Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Batata Frita</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="botaos-modal">
-                                        <i class="far fa-times-circle" style="margin-right: 20px;"></i>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </div>
-                                </div>
-                                <button class="close-modal2">&times;</button>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                    <div class="card3">
-                        <img class="imgcardapio3" src="assents/img/marmitex-g.png" alt="">
-                        <div class="textosimg">
-                            <h1>MARMITA G</h1>
-                            <p>
-                                Completa - Tamanho G
-                            </p>
-                        </div>
-
-
-                        <i id="botaomais3" class=" fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
-
-                        <div class="modal3">
-                            <div class="modal-content">
-                                <div class="conteudo-modal">
-                                    <h1>MARMITA G - (R$20,00)</h1>
-
-
-
-                                    <div class="tarja-verde1">
-                                        <h2>PROTEÍNAS</h2>
-                                        <p>Pode escolher até 2 opções</p>
-                                    </div>
-                                    <div class="opcao-proteinas">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Peito de frango em cubos</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de boi</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Omelete</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Estrogonofe</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de Fígado</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Carne</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Frango</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Carne Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Grelhado</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Xadrez</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde2">
-                                        <h2>CARBOIDRATOS</h2>
-                                        <p>Pode escolher todos</p>
-                                    </div>
-                                    <div class="opcao-carboidratos">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Arroz Branco</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Feijão</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Farofa</label>
-
-
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Batata</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Aimpim</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Macarrão</label>
-                                            <br/>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde3">
-                                        <h2>SALADA</h2>
-                                        <p>Pode escolher até 5 opções</p>
-                                    </div>
-                                    <div class="opcao-salada">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Tomate</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Pepino</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Repolho</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Cenoura Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Manga</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Brócolis</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Vagem Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Batata Frita</label>
-                                        </div>
-                                    </div>
-                                    <div class="botaos-modal">
-                                        <i class="far fa-times-circle" style="margin-right: 20px;"></i>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </div>
-                                </div>
-                                <button class="close-modal3">&times;</button>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                    <div class="card4">
-                        <img class="imgcardapio4" src="assents/img/salada-removebg-preview.png" alt="">
-                        <div class="textosimg">
-                            <h1>SALADA P</h1>
-                            <p>
-                                Salada - Completa P
-                            </p>
-
-                        </div>
-
-                        <i id="botaomais4" class="fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
-                        <div class="modal4">
-                            <div class="modal-content">
-                                <div class="conteudo-modal">
-                                    <h1>SALADA P - (R$18,00)</h1>
-
-                                    <h1>SALADA P - R$ 18,00</h1>
-
-                                    <div class="tarja-verde1">
-                                        <h2>PROTEÍNAS</h2>
-                                        <p>Pode escolher até 2 opções</p>
-                                    </div>
-                                    <div class="opcao-proteinas">
-
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Peito de frango em cubos</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de boi</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Omelete</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Estrogonofe</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de Fígado</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Carne</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Frango</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Carne Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Grelhado</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Xadrez</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde2">
-                                        <h2>CARBOIDRATOS</h2>
-                                        <p>Pode escolher todos</p>
-                                    </div>
-                                    <div class="opcao-carboidratos">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Arroz Branco</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Feijão</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Farofa</label>
-
-
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Batata</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Purê de Aimpim</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Macarrão</label>
-                                            <br/>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde3">
-                                        <h2>SALADA</h2>
-                                        <p>Pode escolher até 5 opções</p>
-                                    </div>
-                                    <div class="opcao-salada">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Tomate</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Pepino</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Repolho</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Cenoura Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Manga</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Brócolis</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Vagem Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve Flor</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Batata Frita</label>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="botaos-modal">
-                                        <i class="far fa-times-circle" style="margin-right: 20px;"></i>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </div>
-                                </div>
-                                <button class="close-modal4">&times;</button>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="card5">
-                        <img class="imgcardapio5" src="assents/img/salada2.png" alt="">
-                        <div class="textosimg">
-                            <h1>SALADA M</h1>
-                            <p>
-                                Salada - Completa M
-                            </p>
-
-                        </div>
-
-                        <i id="botaomais5" class="  fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
-
-                        <div class="modal5">
-                            <div class="modal-content">
-                                <div class="conteudo-modal">
-                                    <h1>SALADA M - R$ 20,00</h1>
-                                    <div class="tarja-verde1">
-                                        <h2>PROTEÍNAS</h2>
-                                        <p>Pode escolher até 2 opções</p>
-                                    </div>
-                                    <div class="opcao-proteinas">
-
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Peito de frango em cubos</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de boi</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Omelete</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Estrogonofe</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de Fígado</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Carne</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Frango</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Carne Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Grelhado</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Xadrez</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde2">
-                                        <h2>VEGETAIS E LEGUMES E FRUTAS</h2>
-                                        <p>Pode escolher 8</p>
-                                    </div>
-                                    <div class="opcao-carboidratos">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Manga</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Cenoura Ralada</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Azeitona</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Alho Porô</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Milho Verde</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Cebola Roxo</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Alface</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Brócolis</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Agrião</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde3">
-                                        <h2>SEMENTES E MOLHOS</h2>
-                                        <p>Pode escolher até 5 opções</p>
-                                    </div>
-                                    <div class="opcao-salada">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Linhaça</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Chia</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Gergelim</label>
-                                            <br/>
-
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Cesar</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Ervas Cítrica</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Mostarda e Mel</label>
-                                            <br/>
-                                        </div>
-                                    </div>
-                                    <div class="botaos-modal">
-                                        <i class="far fa-times-circle" style="margin-right: 20px;"></i>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </div>
-                                </div>
-                                <button class="close-modal5">&times;</button>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                    <div class="card6">
-                        <img class="imgcardapio6" src="assents/img/salada3.png" alt="">
-                        <div class="textosimg">
-                            <h1>SALADA G</h1>
-                            <p>
-                                Salada - Completa G
-                            </p>
-
-                        </div>
-
-                        <i id="botaomais6" class="    fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
-                        <div class="modal6">
-                            <div class="modal-content">
-                                <div class="conteudo-modal">
-                                    <h1>SALADA G - (R$20,00)</h1>
-                                    <div class="tarja-verde1">
-                                        <h2>PROTEÍNA</h2>
-                                        <p>Pode escolher até 2 opções</p>
-                                    </div>
-                                    <div class="opcao-proteinas">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Peito de frango em cubos</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de boi</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Omelete</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Estrogonofe</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Iscas de Fígado</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Carne</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Panqueca de Frango</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Carne Cozida</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Grelhado</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Frango Xadrez</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde2">
-                                        <h2>VEGETAIS E LEGUMES E FRUTAS</h2>
-                                        <p>Pode escolher 8</p>
-                                    </div>
-                                    <div class="opcao-carboidratos">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Manga</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Cenoura Ralada</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Azeitona</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Alho Porô</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Milho Verde</label>
-                                            <br/>
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Cebola Roxo</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Alface</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Couve</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Brócolis</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Agrião</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="tarja-verde3">
-                                        <h2>SEMENTES E MOLHOS</h2>
-                                        <p>Pode escolher até 5 opções</p>
-                                    </div>
-                                    <div class="opcao-salada">
-                                        <div class="fex1">
-                                            <input type="checkbox" id="selecao">
-                                            <label id="textosele">Linhaça</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Chia</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Gergelim</label>
-                                            <br/>
-
-                                        </div>
-
-                                        <div class="fex2">
-                                            <input type="checkbox" id="">
-                                            <label>Cesar</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Ervas Cítrica</label>
-                                            <br/>
-                                            <input type="checkbox" id="">
-                                            <label>Mostarda e Mel</label>
-                                            <br/>
-                                        </div>
-
-                                    </div>
-                                    <div class="botaos-modal">
-                                        <i class="far fa-times-circle" style="margin-right: 20px;"></i>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </div>
-                                </div>
-                                <button class="close-modal6">&times;</button>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </section>
-            </section>
-        </div>
-
-        <!--Sobre nós-->
-        <div class="CorpoSobre" id="Sobre">
-            <section class="imgfundomvv">
-
-
-                <section class="blocos">
-                    <div class="traco"></div>
-                    <div class="container_caixa">
-                        <div class="missao">
-                            <div class="texto1">
-                                <h1 class="sobreh1">MISSÃO</h1>
-                                <p class="sobreParagrafo">
-                                    Oferecer produtos deliciosos e serviços que façam nossos clientes contentes por bastante tempo.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="visao">
-                            <div class="texto2">
-                                <h1 class="sobreh1">VISÃO</h1>
-
-                                <p class="sobreParagrafo">
-                                    Ser reconhecido e ser referência no mercado no ramo alimentício, pelo nosso esforço.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="valores">
-                            <div class="texto3">
-                                <h1 class="sobreh1">VALORES</h1>
-                                <p class="sobreParagrafo">
-                                    Respeito, compromisso e paixão pelos nossos clientes e funcionários.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="traco"></div>
-                </section>
-            </section>
-            <section class="sobre-nos">
-
-                <div class="textossobre">
-                    <h1 class="h1prin">SOBRE<br/> &nbsp; &nbsp; &nbsp; &nbsp; NÓS</h1>
-                </div>
-
-                <div class="caixadetextop">
-                    <div class="caixas">
-                        <p class="textosobre">
-                            A Mary Gourmet atua no mercado há 15 anos, com funcionários treinados e prontos para servi-lo a qualquer hora, respeitando as normas de higiene e qualidade do nossos produtos. O nosso dever é garantir que o cliente esteja satisfeito com nosso atendimento
-                            e com a qualidade dos alimentos oferecidos pela marmitaria. Temos como missão sempre evoluir e crescer com o nossos clientes, com respeito e honestidade. Seja bem vindo a marmitaria Mary Gourmet!
+                <!--manual navigation end-->
+            </div>
+        </section>
+    </Div>
+    <!--image slider end-->
+    </div>
+    <!--CorpoVip-->
+    <div class="CorpoVip" id="Vip">
+        <nav class="navVip">
+
+            <p class="paragrafoVip">Seja <br> &nbsp; Vip</p>
+            <a href="https://api.whatsapp.com/send?phone=5527996409749&text=QUERO%20SER%20VIP%20" target="_blank" class="imgvip">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <i class="fas fa-hand-point-right maozinha"></i>
+            <div class="paragrafoDivVip">
+                <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Ganhe Brindes</p>
+                <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Prazos de Pagamento</p>
+                <p class="paragrafoVipSolo"> <i class="fas fa-plus-circle"></i> Sobremesas e sucos</p>
+            </div>
+        </nav>
+    </div>
+    <!--Fim do Vip-->
+
+
+
+    <!--Cardapio-->
+    <div id="Cardapioo">
+        <section class="imgfundo">
+            <div class="texto">
+                <h1 class="h1">CARDÁPIO</h1>
+            </div>
+        </section>
+
+        <section class="cor2">
+
+
+            <section class="cardapio">
+
+
+
+                <div class="card1">
+                    <img class="imgcardapio1" src="assents/img/marmita p.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA P</h1>
+                        <p>
+                            Completa - Tamanho P
                         </p>
                     </div>
+
+
+
+                    <i id="botaomais" class="  fas fa-plus  " style="margin-left: 90px; margin-top: 20px;"></i>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <div class="conteudo-modal">
+                                <h1>MARMITA P - R$ 16,00</h1>
+                                <div class="tarja-verde1">
+                                    <h2>PROTEÍNAS</h2>
+                                    <p>Pode escolher até 2 opções</p>
+                                </div>
+
+                                <div class="opcao-proteinas">
+
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Peito de frango em cubos</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de boi</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Omelete</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Estrogonofe</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de Fígado</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Carne</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Frango</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Carne Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Grelhado</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Xadrez</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde2">
+                                    <h2>CARBOIDRATOS</h2>
+                                    <p>Pode escolher todos</p>
+                                </div>
+                                <div class="opcao-carboidratos">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Arroz Branco</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Feijão</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Farofa</label>
+
+
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Batata</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Aimpim</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Macarrão</label>
+                                        <br/>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde3">
+                                    <h2>SALADA</h2>
+                                    <p>Pode escolher até 5 opções</p>
+                                </div>
+                                <div class="opcao-salada">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Tomate</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Pepino</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Repolho</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Cenoura Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Manga</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Brócolis</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Vagem Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Batata Frita</label>
+                                    </div>
+
+                                </div>
+                                <div class="botaos-modal">
+                                    <i class="far fa-times-circle" style="margin-right: 20px;"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                            <button class="close-modal">&times;</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
 
 
+
+
+
+
+                <div class="card2">
+                    <img class="imgcardapio2" src="assents/img/marmita m.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA M </h1>
+                        <p>
+                            Completa - Tamanho M
+                        </p>
+                    </div>
+
+
+
+                    <i id="botaomais2" class=" fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
+
+                    <div class="modal2">
+                        <div class="modal-content">
+                            <div class="conteudo-modal">
+                                <h1>MARMITA M - R$ 18,00</h1>
+                                <div class="tarja-verde1">
+                                    <h2>PROTEÍNAS</h2>
+                                    <p>Pode escolher até 2 opções</p>
+                                </div>
+                                <div class="opcao-proteinas">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Peito de frango em cubos</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de boi</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Omelete</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Estrogonofe</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de Fígado</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Carne</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Frango</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Carne Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Grelhado</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Xadrez</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde2">
+                                    <h2>CARBOIDRATOS</h2>
+                                    <p>Pode escolher todos</p>
+                                </div>
+                                <div class="opcao-carboidratos">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Arroz Branco</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Feijão</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Farofa</label>
+
+
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Batata</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Aimpim</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Macarrão</label>
+                                        <br/>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde3">
+                                    <h2>SALADA</h2>
+                                    <p>Pode escolher até 5 opções</p>
+                                </div>
+                                <div class="opcao-salada">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Tomate</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Pepino</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Repolho</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Cenoura Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Manga</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Brócolis</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Vagem Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Batata Frita</label>
+                                    </div>
+
+                                </div>
+                                <div class="botaos-modal">
+                                    <i class="far fa-times-circle" style="margin-right: 20px;"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                            <button class="close-modal2">&times;</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card3">
+                    <img class="imgcardapio3" src="assents/img/marmitex-g.png" alt="">
+                    <div class="textosimg">
+                        <h1>MARMITA G</h1>
+                        <p>
+                            Completa - Tamanho G
+                        </p>
+                    </div>
+
+
+                    <i id="botaomais3" class=" fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
+
+                    <div class="modal3">
+                        <div class="modal-content">
+                            <div class="conteudo-modal">
+                                <h1>MARMITA G - (R$20,00)</h1>
+
+
+
+                                <div class="tarja-verde1">
+                                    <h2>PROTEÍNAS</h2>
+                                    <p>Pode escolher até 2 opções</p>
+                                </div>
+                                <div class="opcao-proteinas">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Peito de frango em cubos</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de boi</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Omelete</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Estrogonofe</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de Fígado</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Carne</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Frango</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Carne Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Grelhado</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Xadrez</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde2">
+                                    <h2>CARBOIDRATOS</h2>
+                                    <p>Pode escolher todos</p>
+                                </div>
+                                <div class="opcao-carboidratos">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Arroz Branco</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Feijão</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Farofa</label>
+
+
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Batata</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Aimpim</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Macarrão</label>
+                                        <br/>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde3">
+                                    <h2>SALADA</h2>
+                                    <p>Pode escolher até 5 opções</p>
+                                </div>
+                                <div class="opcao-salada">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Tomate</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Pepino</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Repolho</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Cenoura Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Manga</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Brócolis</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Vagem Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Batata Frita</label>
+                                    </div>
+                                </div>
+                                <div class="botaos-modal">
+                                    <i class="far fa-times-circle" style="margin-right: 20px;"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                            <button class="close-modal3">&times;</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card4">
+                    <img class="imgcardapio4" src="assents/img/salada-removebg-preview.png" alt="">
+                    <div class="textosimg">
+                        <h1>SALADA P</h1>
+                        <p>
+                            Salada - Completa P
+                        </p>
+
+                    </div>
+
+                    <i id="botaomais4" class="fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
+                    <div class="modal4">
+                        <div class="modal-content">
+                            <div class="conteudo-modal">
+                                <h1>SALADA P - (R$18,00)</h1>
+
+                                <h1>SALADA P - R$ 18,00</h1>
+
+                                <div class="tarja-verde1">
+                                    <h2>PROTEÍNAS</h2>
+                                    <p>Pode escolher até 2 opções</p>
+                                </div>
+                                <div class="opcao-proteinas">
+
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Peito de frango em cubos</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de boi</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Omelete</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Estrogonofe</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de Fígado</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Carne</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Frango</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Carne Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Grelhado</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Xadrez</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde2">
+                                    <h2>CARBOIDRATOS</h2>
+                                    <p>Pode escolher todos</p>
+                                </div>
+                                <div class="opcao-carboidratos">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Arroz Branco</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Feijão</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Farofa</label>
+
+
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Batata</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Purê de Aimpim</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Macarrão</label>
+                                        <br/>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde3">
+                                    <h2>SALADA</h2>
+                                    <p>Pode escolher até 5 opções</p>
+                                </div>
+                                <div class="opcao-salada">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Tomate</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Pepino</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Repolho</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Cenoura Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Manga</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Brócolis</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Vagem Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve Flor</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Batata Frita</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="botaos-modal">
+                                    <i class="far fa-times-circle" style="margin-right: 20px;"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                            <button class="close-modal4">&times;</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="card5">
+                    <img class="imgcardapio5" src="assents/img/salada2.png" alt="">
+                    <div class="textosimg">
+                        <h1>SALADA M</h1>
+                        <p>
+                            Salada - Completa M
+                        </p>
+
+                    </div>
+
+                    <i id="botaomais5" class="  fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
+
+                    <div class="modal5">
+                        <div class="modal-content">
+                            <div class="conteudo-modal">
+                                <h1>SALADA M - R$ 20,00</h1>
+                                <div class="tarja-verde1">
+                                    <h2>PROTEÍNAS</h2>
+                                    <p>Pode escolher até 2 opções</p>
+                                </div>
+                                <div class="opcao-proteinas">
+
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Peito de frango em cubos</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de boi</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Omelete</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Estrogonofe</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de Fígado</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Carne</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Frango</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Carne Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Grelhado</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Xadrez</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde2">
+                                    <h2>VEGETAIS E LEGUMES E FRUTAS</h2>
+                                    <p>Pode escolher 8</p>
+                                </div>
+                                <div class="opcao-carboidratos">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Manga</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Cenoura Ralada</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Azeitona</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Alho Porô</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Milho Verde</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Cebola Roxo</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Alface</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Brócolis</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Agrião</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde3">
+                                    <h2>SEMENTES E MOLHOS</h2>
+                                    <p>Pode escolher até 5 opções</p>
+                                </div>
+                                <div class="opcao-salada">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Linhaça</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Chia</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Gergelim</label>
+                                        <br/>
+
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Cesar</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Ervas Cítrica</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Mostarda e Mel</label>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="botaos-modal">
+                                    <i class="far fa-times-circle" style="margin-right: 20px;"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                            <button class="close-modal5">&times;</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card6">
+                    <img class="imgcardapio6" src="assents/img/salada3.png" alt="">
+                    <div class="textosimg">
+                        <h1>SALADA G</h1>
+                        <p>
+                            Salada - Completa G
+                        </p>
+
+                    </div>
+
+                    <i id="botaomais6" class="    fas fa-plus" style="margin-left: 90px; margin-top: 20px;"></i>
+                    <div class="modal6">
+                        <div class="modal-content">
+                            <div class="conteudo-modal">
+                                <h1>SALADA G - (R$20,00)</h1>
+                                <div class="tarja-verde1">
+                                    <h2>PROTEÍNA</h2>
+                                    <p>Pode escolher até 2 opções</p>
+                                </div>
+                                <div class="opcao-proteinas">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Peito de frango em cubos</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de boi</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Omelete</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Estrogonofe</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Iscas de Fígado</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Carne</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Panqueca de Frango</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Carne Cozida</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Grelhado</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Frango Xadrez</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde2">
+                                    <h2>VEGETAIS E LEGUMES E FRUTAS</h2>
+                                    <p>Pode escolher 8</p>
+                                </div>
+                                <div class="opcao-carboidratos">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Manga</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Cenoura Ralada</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Azeitona</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Alho Porô</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Milho Verde</label>
+                                        <br/>
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Cebola Roxo</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Alface</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Couve</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Brócolis</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Agrião</label>
+                                    </div>
+
+                                </div>
+                                <div class="tarja-verde3">
+                                    <h2>SEMENTES E MOLHOS</h2>
+                                    <p>Pode escolher até 5 opções</p>
+                                </div>
+                                <div class="opcao-salada">
+                                    <div class="fex1">
+                                        <input type="checkbox" id="selecao">
+                                        <label id="textosele">Linhaça</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Chia</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Gergelim</label>
+                                        <br/>
+
+                                    </div>
+
+                                    <div class="fex2">
+                                        <input type="checkbox" id="">
+                                        <label>Cesar</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Ervas Cítrica</label>
+                                        <br/>
+                                        <input type="checkbox" id="">
+                                        <label>Mostarda e Mel</label>
+                                        <br/>
+                                    </div>
+
+                                </div>
+                                <div class="botaos-modal">
+                                    <i class="far fa-times-circle" style="margin-right: 20px;"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                            <button class="close-modal6">&times;</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </section>
-        </div>
-        <!--FIM Sobre nós-->
+        </section>
+    </div>
 
-        <!--COMEÇO DOS CONTATOS-->
-        <div class="CorpoContatos">
-            <section class="contatos" id="Contatoss">
+    <!--Sobre nós-->
+    <div class="CorpoSobre" id="Sobre">
+        <section class="imgfundomvv">
 
-                <div class="imgcontato1"></div>
-                <div class="imgcontato2"></div>
 
-                <h1 class="contatosh1">CONTATOS</h1>
-                <div class="formulario_forma">
+            <section class="blocos">
+                <div class="traco"></div>
+                <div class="container_caixa">
+                    <div class="missao">
+                        <div class="texto1">
+                            <h1 class="sobreh1">MISSÃO</h1>
+                            <p class="sobreParagrafo">
+                                Oferecer produtos deliciosos e serviços que façam nossos clientes contentes por bastante tempo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="visao">
+                        <div class="texto2">
+                            <h1 class="sobreh1">VISÃO</h1>
 
-                    <form class="formulario">
-                        <p class="contatosParagrafo">NOME</p>
-                        <input class="   input-placeholder  input_contatos" type="text" name=" input-placeholder" placeholder="Digite seu nome">
+                            <p class="sobreParagrafo">
+                                Ser reconhecido e ser referência no mercado no ramo alimentício, pelo nosso esforço.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="valores">
+                        <div class="texto3">
+                            <h1 class="sobreh1">VALORES</h1>
+                            <p class="sobreParagrafo">
+                                Respeito, compromisso e paixão pelos nossos clientes e funcionários.
+                            </p>
+                        </div>
+                    </div>
 
-                        <p class="contatosParagrafo">E-MAIL</p>
-                        <input class=" input-placeholder" type="text" name="nome" placeholder="Digite seu email">
+                </div>
+                <div class="traco"></div>
+            </section>
+        </section>
+        <section class="sobre-nos">
 
-                        <p class="contatosParagrafo">MENSAGEM</p>
-                        <textarea name="" id="" cols="30" rows="10">
+            <div class="textossobre">
+                <h1 class="h1prin">SOBRE<br/> &nbsp; &nbsp; &nbsp; &nbsp; NÓS</h1>
+            </div>
+
+            <div class="caixadetextop">
+                <div class="caixas">
+                    <p class="textosobre">
+                        A Mary Gourmet atua no mercado há 15 anos, com funcionários treinados e prontos para servi-lo a qualquer hora, respeitando as normas de higiene e qualidade do nossos produtos. O nosso dever é garantir que o cliente esteja satisfeito com nosso atendimento
+                        e com a qualidade dos alimentos oferecidos pela marmitaria. Temos como missão sempre evoluir e crescer com o nossos clientes, com respeito e honestidade. Seja bem vindo a marmitaria Mary Gourmet!
+                    </p>
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+    <!--FIM Sobre nós-->
+
+    <!--COMEÇO DOS CONTATOS-->
+    <div class="CorpoContatos">
+        <section class="contatos" id="Contatoss">
+
+            <div class="imgcontato1"></div>
+            <div class="imgcontato2"></div>
+
+            <h1 class="contatosh1">CONTATOS</h1>
+            <div class="formulario_forma">
+
+                <form class="formulario">
+                    <p class="contatosParagrafo">NOME</p>
+                    <input class="   input-placeholder  input_contatos" type="text" name=" input-placeholder" placeholder="Digite seu nome">
+
+                    <p class="contatosParagrafo">E-MAIL</p>
+                    <input class=" input-placeholder" type="text" name="nome" placeholder="Digite seu email">
+
+                    <p class="contatosParagrafo">MENSAGEM</p>
+                    <textarea name="" id="" cols="30" rows="10">
 
                </textarea>
 
-                    </form>
-                    <button class="botao_form">ENVIAR</button>
-                </div>
-            </section>
-        </div>
-        <!--FIM DOS CONTATOS-->
-
-        <!--Localização-->
-
-        <div class="CorpoLocalização" id="Localização">
-            <section class="fundoLocalizaçao">
-
-                <h1 class="titleLocalizaçao">Localização <i class="fas fa-map-marker-alt"></i></h1>
-                <br>
-                <p class="paragrafoLocalizaçao">Rua R. João Gonçalves, 6-27 - <br> São Francisco, Cariacica - ES, <br>29145-387</p>
-
-                <!-- MAPA -->
-
-
-
-                <div style='overflow:hidden;height:480px;width:100%;color: #0095eb' class="corpoLoca">
-                    <div id='gmap_canvas' style='height:480px;width:100%;'></div>
-                    <style>
-                        #gmap_canvas img {
-                            max-width: none!important;
-                            background: none!important
-                        }
-                    </style>
-                </div>
-
-
-
-                <!-- MAPA -->
-            </section>
-        </div>
-        <!--FIM DA LOCALIZAÇÃO-->
-
-        <section class="FundoDireito">
-            <p class="paragrafoDireito">© 2021 Mary Gourmet. Todos os direitos reservados.</p>
+                </form>
+                <button class="botao_form">ENVIAR</button>
+            </div>
         </section>
+    </div>
+    <!--FIM DOS CONTATOS-->
+
+    <!--Localização-->
+
+    <div class="CorpoLocalização" id="Localização">
+        <section class="fundoLocalizaçao">
+
+            <h1 class="titleLocalizaçao">Localização <i class="fas fa-map-marker-alt"></i></h1>
+            <br>
+            <p class="paragrafoLocalizaçao">Rua R. João Gonçalves, 6-27 - <br> São Francisco, Cariacica - ES, <br>29145-387</p>
+
+            <!-- MAPA -->
+
+
+
+            <div style='overflow:hidden;height:480px;width:100%;color: #0095eb' class="corpoLoca">
+                <div id='gmap_canvas' style='height:480px;width:100%;'></div>
+                <style>
+                    #gmap_canvas img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                </style>
+            </div>
+
+
+
+            <!-- MAPA -->
+        </section>
+    </div>
+    <!--FIM DA LOCALIZAÇÃO-->
+
+    <section class="FundoDireito">
+        <p class="paragrafoDireito">© 2021 Mary Gourmet. Todos os direitos reservados.</p>
+    </section>
 
 
 

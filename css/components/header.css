@@ -1,13 +1,12 @@
-.headerCadastro {
+.header {
     display: flex;
-}
-
-.headerCabecalho {
+    /* para um item ficar um do lado do outro / e poder ficar alinhado*/
+    justify-content: space-between;
+    /* para fica no centro */
     position: fixed;
-    display: flex;
     width: 100%;
     height: 135px;
-    justify-content: space-between;
+    /* O altura DO HEADER */
     background-color: #000;
     padding-left: 0px;
     padding-right: 0px;
@@ -16,4 +15,144 @@
     align-items: center;
     z-index: 90;
     opacity: 0.9;
+}
+
+.imgLogo {
+    height: 125px;
+    transition: transform 135ms linear, opacity 230ms ease-in-out;
+}
+
+.imgLogo:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.imglogoA {
+    margin-right: 0px;
+}
+
+.container {
+    display: flex;
+    /* PARA SER TRATADO COMO FLEX */
+    justify-content: space-between;
+    /* PARA FICAR UM LONGE DO OUTRO , CADA UM NO SEU CANTO*/
+    width: 580px;
+    /*largura */
+}
+
+.menu {
+    display: flex;
+    /* PARA FICAR UM DO LADO DO OUTRO */
+    align-items: center;
+    /* PARA FICAR NO CENTRO */
+}
+
+.nav .ul,
+
+/* menu responsivo */
+
+.nav .li {
+    list-style: none;
+    /*  para tirar os potinhos da lista  */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* menu normal */
+
+.nav .ul {
+    display: flex;
+    /* para ficar um do lado do outro */
+}
+
+.nav .link {
+    display: flex;
+    /* para gente consegui alterar tamanho e ficar em bloco*/
+    padding: 15px;
+    /* espaço entre as palvras */
+    text-decoration: none;
+    /* sem decoração nehuma  */
+    text-transform: uppercase;
+    /* letra maiuscula */
+    color: #727272;
+    /* cor da letras */
+}
+
+.nav .active .link,
+
+/* para deixar selecionado o quadrado azul */
+
+.nav .link:hover {
+    /* para passar o mouse e aplicar essa configuração */
+    background-color: #2ed573;
+    /* a cor do quadrado */
+    color: #FFFFFF;
+    /* cor da letra */
+}
+
+.menuMobile {
+    /*  as linhas do menu */
+    display: none;
+    /* QUANDO NAO TIVER NO CELULAR NÃO IRA APARECER*/
+    width: 40px;
+    /* são as linhas do menu*/
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    /* SÃO AS LINHAS DO MENU*/
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width:600px) {
+    /* a partir DESSA LARGURA daqui ele ira aplicar */
+    .container {
+        flex-direction: column;
+        /* NÃO IRÁ FICAR UM EMBAIXO DO OUTRO, MAS SIM , UM EMBAIXO DO OUTRO */
+    }
+    .footer_menu {
+        flex-direction: column;
+        /* para ficar um embaixo do outro */
+    }
+    .footer_copy {
+        padding-left: 20px;
+        /* ESQUERDO*/
+    }
+    .header .container {
+        /* PARA O MENU   FICAR EM LINHAS / RESPONSIVO*/
+        flex-direction: row;
+    }
+    .nav .ul {
+        flex-direction: column;
+        /* para ficar um embaixo do outro */
+        display: none;
+        /* para não aparece  */
+        position: absolute;
+        /* o elemento flutuo e jogamos para esquerda */
+        left: 0;
+        /* PARA DEIXAR BEM COLADO     */
+        width: 100%;
+        /* oculpou todo espaço disponivel */
+        background-color: #e61111;
+    }
+    .header {
+        height: auto;
+        /*  tiramos a altura dele, para o menu tomar o lugar   */
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menuMobile {
+        display: flex;
+        /* para poder colocar no meio */
+        flex-direction: column;
+        /* PARA FICAR UM ABAIXO DO OUTRO */
+        justify-content: space-around;
+        /* para espaçar igualmente entre eles */
+    }
 }
