@@ -1,5 +1,7 @@
 .CorpoHome {
     background: url('/assents/img/fundo\ 0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     z-index: 2;
