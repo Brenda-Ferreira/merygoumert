@@ -110,10 +110,11 @@
     background-color: #39aae1;
 }
 
-@media (max-width:600px) {
+@media (max-width:360px) {
     /* a partir DESSA LARGURA daqui ele ira aplicar */
     .container {
         flex-direction: column;
+        padding-left: 100px;
         /* NÃO IRÁ FICAR UM EMBAIXO DO OUTRO, MAS SIM , UM EMBAIXO DO OUTRO */
     }
     .footer_menu {
@@ -135,7 +136,7 @@
         /* para não aparece  */
         position: absolute;
         /* o elemento flutuo e jogamos para esquerda */
-        left: 0;
+        right: 0;
         /* PARA DEIXAR BEM COLADO     */
         width: 100%;
         /* oculpou todo espaço disponivel */
@@ -152,10 +153,9 @@
     
     .menuMobile {
         display: flex;
-        /* para poder colocar no meio */
         flex-direction: column;
-        /* PARA FICAR UM ABAIXO DO OUTRO */
         justify-content: space-around;
-        /* para espaçar igualmente entre eles */
+        
+        
     }
 }

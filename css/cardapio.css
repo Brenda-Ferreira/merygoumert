@@ -88,14 +88,16 @@
     border-radius: 100px;
     display: flex;
     position: relative;
-    left: 5%;
+    left: -1%;
     padding-top: 50px;
     padding-left: 30px;
 }
 
 .cardapio {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 40px;
+    
+    
     grid-template-areas: "item1 item2 item3" "item4 item5 item6";
 }
 
