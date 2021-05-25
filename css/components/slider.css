@@ -118,8 +118,19 @@
     background: #40D3DC;
 }
 
-@media (min-width: 2560px) and (max-width:2800) {
-  
+@media (min-width: 2560px)  {
+    .slider {
+        margin-top: 0px;
+        padding-top: 170px;
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        top: 150px;
+        left: 36%;
+    }
+    
 }
 
 @media (max-width: 360px) {
