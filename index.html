@@ -229,45 +229,114 @@
                                     <h2>PROTEÍNAS</h2>
                                     <p>Pode escolher até 2 opções</p>
                                 </div>
+                                <form name = "form1" width = "100%" action = "bullet" method="POST" >
+
 
                                 <div class="opcao-proteinas">
 
+                                    <script type="text/javascript">
+                                        
+                                        
+                                        
+                                        
+                                        function verificar2() {
+                                        var CheckMaximo = 2;
+                                        var Marcados = 1;
+                                        var objCheck = document.forms['form1'].elements['selecao'];
+                                        
+                                        //Percorrendo os checks para ver quantos foram selecionados:
+                                        for (var iLoop = 0; iLoop<objCheck.length; iLoop++) {
+                                            //Se o número máximo de checkboxes ainda não tiver sido atingido, continua a verificação:
+                                            if (Marcados <= CheckMaximo) {
+                                                if (objCheck[iLoop].checked) {
+                                                    Marcados++;
+                                                }
+                                                    //Habilitando todos os checkboxes, pois o máximo ainda não foi alcançado.
+                                                    for (var i=0; i<objCheck.length; i++) {
+                                                        objCheck[i].disabled = false;
+                                                    }	
+                                            //Caso contrário, desabilitar o checkbox;
+                                            //Nesse caso, é necessário percorrer todas as opções novamente, desabilitando as não checadas;
+                                            } else {
+                                                for (var i=0; i<objCheck.length; i++) {
+                                                    if(objCheck[i].checked == false) {
+                                                        objCheck[i].disabled = true;
+                                                    }	
+                                                }
+                                            }
+                                        }
+                                        }
+
+                                        function verificar5() {
+                                        var CheckMaximo = 5;
+                                        var Marcados = 1;
+                                        var objCheck = document.forms['form2'].elements['selecao2'];
+                                        
+                                        //Percorrendo os checks para ver quantos foram selecionados:
+                                        for (var iLoop = 0; iLoop<objCheck.length; iLoop++) {
+                                            //Se o número máximo de checkboxes ainda não tiver sido atingido, continua a verificação:
+                                            if (Marcados <= CheckMaximo) {
+                                                if (objCheck[iLoop].checked) {
+                                                    Marcados++;
+                                                }
+                                                    //Habilitando todos os checkboxes, pois o máximo ainda não foi alcançado.
+                                                    for (var i=0; i<objCheck.length; i++) {
+                                                        objCheck[i].disabled = false;
+                                                    }	
+                                            //Caso contrário, desabilitar o checkbox;
+                                            //Nesse caso, é necessário percorrer todas as opções novamente, desabilitando as não checadas;
+                                            } else {
+                                                for (var i=0; i<objCheck.length; i++) {
+                                                    if(objCheck[i].checked == false) {
+                                                        objCheck[i].disabled = true;
+                                                    }	
+                                                }
+                                            }
+                                        }
+                                        }
+                                    </script>
+
+                                   
                                     <div class="fex1">
-                                        <input type="checkbox" id="selecao">
+                                        <input type="checkbox"  onclick = "verificar2()" id="selecao">
                                         <label id="textosele">Peito de frango em cubos</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar2()" id="selecao">
                                         <label>Iscas de boi</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox"  onclick = "verificar2()"id="selecao">
                                         <label>Omelete</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox"  onclick = "verificar2()" id="selecao">
                                         <label>Estrogonofe</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox"  onclick = "verificar2()" id="selecao">
                                         <label>Iscas de Fígado</label>
                                         <br/>
                                     </div>
-
+                                 
+                                    
                                     <div class="fex2">
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar2()" id="selecao">
                                         <label>Panqueca de Carne</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar2()" id="selecao">
                                         <label>Panqueca de Frango</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar2()" id="selecao">
                                         <label>Carne Cozida</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar2()" id="selecao">
                                         <label>Frango Grelhado</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar2()" id="selecao">
                                         <label>Frango Xadrez</label>
                                     </div>
-
+                                
+                                
                                 </div>
+
+                             </form>
                                 <div class="tarja-verde2">
                                     <h2>CARBOIDRATOS</h2>
                                     <p>Pode escolher todos</p>
@@ -303,43 +372,45 @@
                                     <h2>SALADA</h2>
                                     <p>Pode escolher até 5 opções</p>
                                 </div>
+                                <form name = "form2" width = "100%" action = "bullet" method="POST" >
                                 <div class="opcao-salada">
                                     <div class="fex1">
-                                        <input type="checkbox" id="selecao">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label id="textosele">Tomate</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Pepino</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Repolho</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Cenoura Cozida</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Couve Flor</label>
                                         <br/>
                                     </div>
 
                                     <div class="fex2">
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Manga</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Brócolis</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Vagem Cozida</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Couve Flor</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificar5()" id="selecao2">
                                         <label>Batata Frita</label>
                                     </div>
 
                                 </div>
+                                </form>
                                 <div class="botaos-modal">
 
                                     <i class="fas fa-shopping-cart carrinho"></i>
