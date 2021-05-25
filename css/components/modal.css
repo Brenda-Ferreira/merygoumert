@@ -453,6 +453,121 @@
         top: 10px;
     }
 
+    @media (max-width: 360px) {
+        .modal-content {
+            width: 250px;
+            height: 350px;
+            border: 10px double #647937;
+            top: 70px;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: #eee;
+            box-shadow: 0 0 20px #0008;
+            position: relative;
+        }
+
+        .conteudo-modal h1 {
+            text-align: center;
+            font-size: 10px;
+            position: relative;
+            top: -15px;
+            
+        }
+     
+        
+        .tarja-verde1 {
+            width: 60%;
+            height: 15px;
+            position: relative;
+            left: 50px;
+            top: -25px;
+            background: #a2b873;
+        }
+        .opcao-proteinas{
+            position: relative;
+            top: -20px;
+            left: -65px;
+        }
+        .opcao-carboidratos{
+            position: relative;
+           
+            left: -50px;
+        }
+
+        .opcao-salada{
+            position: relative;
+           
+            left: -50px;
+        }
+
+        .tarja-verde1 h2,
+        .tarja-verde2 h2,
+        .tarja-verde3 h2 {
+            padding-top: 3px;
+            font-size: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .tarja-verde1 p,
+        .tarja-verde2 p,
+        .tarja-verde3 p {
+            padding-top: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        .tarja-verde2 {
+            position: relative;
+            left: 50px;
+            top: -15px;
+            width: 60%;
+            height: 15px;
+            background: #a2b873;
+        }
+        
+        .tarja-verde3 {
+            margin-top: 20px;
+            position: relative;
+            left: 50px;
+            top: -15px;
+            width: 60%;
+            height: 15px;
+            background: #a2b873;
+        }
+
+        .fex1 label{
+            font-size: 8px
+        }
+
+      
+
+        
+        .fex2 label{
+            font-size: 8px
+        }
+
+        .fex2 [type=checkbox]{
+            height: 8px;
+        }
+
+        .fex1 [type=checkbox]{
+            height: 8px;
+        }
+
+        .carrinho{
+            position: relative;
+            top: -25px;
+                     
+        }
+        .botaos-modal {
+            margin-left: 340px;
+            
+        }
+        
+    }
+    
+
 
     
 }
