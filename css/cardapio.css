@@ -166,6 +166,17 @@
     background: #d9d9d9;
     border-radius: 30px;
 }
+@media (max-width: 2560px) {
+    .cardapio {
+        display: grid;
+        grid-gap: 100px;
+        grid-template-areas: "item1 item2 item3 " " item4 item5 item6";
+       
+    }
+    
+}
+
+
 
 @media (max-width: 1024px) {
     .cardapio {
