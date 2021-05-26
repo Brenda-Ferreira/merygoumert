@@ -222,38 +222,38 @@
 
                                    
                                     <div class="fex1">
-                                        <input type="checkbox"  onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox"  onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label id="textosele">Peito de frango em cubos</label>
                                         <br/>
-                                        <input type="checkbox" onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox" onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Iscas de boi</label>
                                         <br/>
                                         <input type="checkbox"  onclick = "verificarP2()"id="selecao">
                                         <label>Omelete</label>
                                         <br/>
-                                        <input type="checkbox"  onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox"  onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Estrogonofe</label>
                                         <br/>
-                                        <input type="checkbox"  onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox"  onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Iscas de Fígado</label>
                                         <br/>
                                     </div>
                                  
                                     
                                     <div class="fex2">
-                                        <input type="checkbox" onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox" onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Panqueca de Carne</label>
                                         <br/>
-                                        <input type="checkbox" onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox" onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Panqueca de Frango</label>
                                         <br/>
-                                        <input type="checkbox" onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox" onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Carne Cozida</label>
                                         <br/>
-                                        <input type="checkbox" onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox" onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Frango Grelhado</label>
                                         <br/>
-                                        <input type="checkbox" onclick = "verificarP2()" id="selecao">
+                                        <input type="checkbox" onclick = "checkGeral(2, 'form1', 'selecao')" id="selecao">
                                         <label>Frango Xadrez</label>
                                     </div>
                                 
@@ -528,43 +528,47 @@
                                     <h2>PROTEÍNAS</h2>
                                     <p>Pode escolher até 2 opções</p>
                                 </div>
+
+                                <form name = "formGP" width = "100%" action = "bullet" method="POST" >
+
                                 <div class="opcao-proteinas">
                                     <div class="fex1">
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label id="textosele">Peito de frango em cubos</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Iscas de boi</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Omelete</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Estrogonofe</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Iscas de Fígado</label>
                                         <br/>
                                     </div>
 
                                     <div class="fex2">
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Panqueca de Carne</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Panqueca de Frango</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Carne Cozida</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Frango Grelhado</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG2()" id="GP">
                                         <label>Frango Xadrez</label>
                                     </div>
 
                                 </div>
+                                </form>
                                 <div class="tarja-verde2">
                                     <h2>CARBOIDRATOS</h2>
                                     <p>Pode escolher todos</p>
@@ -600,42 +604,46 @@
                                     <h2>SALADA</h2>
                                     <p>Pode escolher até 5 opções</p>
                                 </div>
+
+                                <form name = "formGS" width = "100%" action = "bullet" method="POST" >
+
                                 <div class="opcao-salada">
                                     <div class="fex1">
-                                        <input type="checkbox" id="selecao">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label id="textosele">Tomate</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Pepino</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Repolho</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Cenoura Cozida</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Couve Flor</label>
                                         <br/>
                                     </div>
 
                                     <div class="fex2">
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Manga</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Brócolis</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Vagem Cozida</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Couve Flor</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "verificarG5()" id="GS">
                                         <label>Batata Frita</label>
                                     </div>
                                 </div>
+                                </form>
                                 <div class="botaos-modal">
 
                                     <i class="fas fa-shopping-cart carrinho"></i>
@@ -672,44 +680,48 @@
                                     <h2>PROTEÍNAS</h2>
                                     <p>Pode escolher até 2 opções</p>
                                 </div>
+
+                                <form name = "formSP" width = "100%" action = "bullet" method="POST" >
+
                                 <div class="opcao-proteinas">
 
                                     <div class="fex1">
-                                        <input type="checkbox" id="selecao">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label id="textosele">Peito de frango em cubos</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Iscas de boi</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Omelete</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Estrogonofe</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Iscas de Fígado</label>
                                         <br/>
                                     </div>
 
                                     <div class="fex2">
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Panqueca de Carne</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Panqueca de Frango</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Carne Cozida</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Frango Grelhado</label>
                                         <br/>
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" onclick = "checkGeral(2,'formSP', 'SP')" id="SP">
                                         <label>Frango Xadrez</label>
                                     </div>
 
                                 </div>
+                                </form>
                                 <div class="tarja-verde2">
                                     <h2>VEGETAIS E LEGUMES E FRUTAS</h2>
                                     <p>Pode escolher 8</p>
@@ -1219,9 +1231,10 @@
 <script src="js/localizacao.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/menuHambuguer.js"></script>
-<script src ='js/checkboxP.js'></script>
+<script src ="js/checkboxP.js"></script>
 <script src="js/checkboxM.js"></script>
-
+<script src="js/checkboxG.js"></script>
+<script src="js/checkGeral.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
