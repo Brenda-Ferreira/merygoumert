@@ -1,6 +1,6 @@
 
 
-                                        function verificar2() 
+                                        function verificarM2() 
                                         {
                                             var CheckMaximo = 2;
                                             var Marcados = 1;
@@ -29,7 +29,7 @@
                                             }
                                         };
 
-                                        function verificar5() {
+                                        function verificarM5() {
                                             var CheckMaximo = 5;
                                             var Marcados = 1;
                                             var objCheck = document.forms['form4'].elements['selecao4'];
