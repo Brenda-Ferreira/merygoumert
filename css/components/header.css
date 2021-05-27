@@ -76,7 +76,7 @@
     /* sem decoração nehuma  */
     text-transform: uppercase;
     /* letra maiuscula */
-    color: #727272;
+    color: #fc5c65;
     /* cor da letras */
 }
 
@@ -107,7 +107,7 @@
 .mm_line {
     /* SÃO AS LINHAS DO MENU*/
     height: 3px;
-    background-color: #39aae1;
+    background-color: #2ed573;
 }
 
 @media (max-width:360px) {
@@ -140,7 +140,7 @@
         /* PARA DEIXAR BEM COLADO     */
         width: 100%;
         /* oculpou todo espaço disponivel */
-        background-color: #e61111;
+        background-color: #7C5E99;
     }
     .header {
         height: auto;
@@ -149,13 +149,9 @@
     .logo {
         padding-left: 20px;
     }
-   
-    
     .menuMobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
-        
     }
 }
