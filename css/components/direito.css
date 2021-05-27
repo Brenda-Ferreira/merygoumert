@@ -5,7 +5,7 @@
     background-size: cover;
     height: 100px;
     width: 100%;
-    margin-top: 11px;
+    margin-top: 32px;
 }
 
 .paragrafoDireito {
@@ -87,9 +87,9 @@
         background-image: url('/assents/img/fundoDireito.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 125px;
+        height: 120px;
         width: 100%;
-        top: 35px;
+        top: 44px;
     }
     .paragrafoDireito {
         color: aqua;

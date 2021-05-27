@@ -7,3 +7,15 @@ function init_map() {
     infowindow.open(map, marker);
 }
 google.maps.event.addDomListener(window, 'load', init_map);
+
+
+function mensagem() {
+    if ($('#nomee').val() == null || $('#nomee').val() == "") {
+        alert('Mensagem não enviada!');
+        return false;
+    } else if ($('#nomee').val() != null || $('#nomee').val() != "") {
+        alert('Mensagem enviada!');
+        return false;
+    }
+
+}

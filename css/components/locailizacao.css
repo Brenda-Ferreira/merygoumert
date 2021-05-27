@@ -28,7 +28,7 @@
             height: 510px;
             text-align: justify;
             position: relative;
-            top: 173px;
+            top: 194px;
         }
         
         .corpoLoca {
@@ -149,9 +149,20 @@
             }
             .paragrafoLocalizaçao {
                 font-size: 13px;
-                padding-left: 10px;
+                padding-left: 0px;
                 justify-content: space-between;
                 position: relative;
                 top: 50px;
+                left: 9px;
+            }
+            .fundoLocalizaçao {
+                display: inline-block;
+                background-color: rgba(93, 161, 76, 0.747);
+                color: white;
+                width: 100%;
+                height: 490px;
+                text-align: justify;
+                position: relative;
+                top: 194px;
             }
         }
