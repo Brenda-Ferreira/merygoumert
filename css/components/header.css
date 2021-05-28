@@ -36,7 +36,7 @@
     /* PARA SER TRATADO COMO FLEX */
     justify-content: space-between;
     /* PARA FICAR UM LONGE DO OUTRO , CADA UM NO SEU CANTO*/
-    width: 580px;
+    width: 610px;
     /*largura */
     margin-left: 10px;
 }
@@ -108,6 +108,21 @@
     /* SÃO AS LINHAS DO MENU*/
     height: 3px;
     background-color: #2ed573;
+}
+
+@media (max-width:768px) {
+    .nav .link {
+        display: flex;
+        /* para gente consegui alterar tamanho e ficar em bloco*/
+        padding: 12px;
+        /* espaço entre as palvras */
+        text-decoration: none;
+        /* sem decoração nehuma  */
+        text-transform: uppercase;
+        /* letra maiuscula */
+        color: #fc5c65;
+        /* cor da letras */
+    }
 }
 
 @media (max-width:360px) {

@@ -13,7 +13,7 @@
     color: white;
     font-size: 40px;
     position: relative;
-    left: 25%;
+    left: 10%;
     margin-top: 20px;
 }
 
@@ -26,7 +26,7 @@
 .maozinha {
     position: relative;
     top: 20px;
-    left: 60px;
+    left: -85px;
     font-size: 75px;
     color: white;
     animation-name: fly;
@@ -47,7 +47,17 @@
     font-size: 60px;
     position: relative;
     top: 15px;
-    left: 240px;
+    left: 120px;
+    color: white;
+    transition: transform 135ms linear, opacity 230ms ease-in-out;
+}
+
+.imgvip2 {
+    display: block;
+    font-size: 60px;
+    position: relative;
+    top: 15px;
+    left: 135px;
     color: white;
     transition: transform 135ms linear, opacity 230ms ease-in-out;
 }
@@ -61,6 +71,11 @@
     opacity: 0.9;
 }
 
+.imgvip2:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
 @media (max-width: 1024px) {
     .paragrafoVip {
         color: rgb(255, 255, 255);
@@ -68,12 +83,13 @@
         font-weight: 700;
         font-size: 125px;
         z-index: 4;
-        margin-left: 100px;
+        max-width: 220px;
+        margin-left: 40px;
     }
     .maozinha {
         position: relative;
         top: 15px;
-        left: 10px;
+        left: -115px;
         font-size: 75px;
         color: white;
         animation-name: fly;
@@ -88,7 +104,7 @@
         color: white;
         font-size: 35px;
         position: relative;
-        left: 205px;
+        left: 105px;
         margin-top: 50px;
     }
     .paragrafoVipSolo {
@@ -101,7 +117,16 @@
         font-size: 75px;
         position: relative;
         top: 15px;
-        left: 180px;
+        left: 115px;
+        color: white;
+        transition: transform 135ms linear, opacity 230ms ease-in-out;
+    }
+    .imgvip2 {
+        display: block;
+        font-size: 75px;
+        position: relative;
+        top: 15px;
+        left: 135px;
         color: white;
         transition: transform 135ms linear, opacity 230ms ease-in-out;
     }
@@ -114,12 +139,13 @@
         font-weight: 700;
         font-size: 95px;
         z-index: 4;
+        max-width: 170px;
         margin-left: 40px;
     }
     .maozinha {
         position: relative;
         top: 15px;
-        left: -20px;
+        left: -90px;
         font-size: 55px;
         color: white;
         animation-name: fly;
@@ -134,7 +160,7 @@
         color: white;
         font-size: 27px;
         position: relative;
-        left: 165px;
+        left: 55px;
         margin-top: 50px;
     }
     .paragrafoVipSolo {
@@ -147,7 +173,16 @@
         font-size: 55px;
         position: relative;
         top: 15px;
-        left: 120px;
+        left: 85px;
+        color: white;
+        transition: transform 135ms linear, opacity 230ms ease-in-out;
+    }
+    .imgvip2 {
+        display: block;
+        font-size: 55px;
+        position: relative;
+        top: 15px;
+        left: 95px;
         color: white;
         transition: transform 135ms linear, opacity 230ms ease-in-out;
     }
@@ -204,15 +239,16 @@
         color: rgb(255, 255, 255);
         font-family: 'Medula One', cursive;
         font-weight: 700;
-        font-size: 50px;
+        font-size: 40px;
         z-index: 4;
-        margin-left: 20px;
+        max-width: 90px;
+        margin-left: 10px;
     }
     .maozinha {
         position: relative;
-        top: 20px;
-        left: -20px;
-        font-size: 25px;
+        top: 15px;
+        left: -50px;
+        font-size: 15px;
         color: white;
         animation-name: fly;
         animation-duration: 1s;
@@ -226,20 +262,30 @@
         color: white;
         font-size: 14px;
         position: relative;
-        left: 55px;
-        margin-top: 50px;
+        left: 25px;
+        margin-top: 30px;
     }
     .paragrafoVipSolo {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
+        font-size: 14px;
     }
     .imgvip {
         display: block;
-        font-size: 30px;
+        font-size: 20px;
         position: relative;
         top: 15px;
-        left: 47px;
+        left: 15px;
+        color: white;
+        transition: transform 135ms linear, opacity 230ms ease-in-out;
+    }
+    .imgvip2 {
+        display: block;
+        font-size: 20px;
+        position: relative;
+        top: 15px;
+        left: 22px;
         color: white;
         transition: transform 135ms linear, opacity 230ms ease-in-out;
     }
