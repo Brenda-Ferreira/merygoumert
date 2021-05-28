@@ -1,0 +1,9 @@
+.TabelaCarrinho {
+    width: 500px;
+}
+
+.ResumoPedido {
+    width: 500px;
+    height: 500px;
+    margin: 3px solid #000;
+}
