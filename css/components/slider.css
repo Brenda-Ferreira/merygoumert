@@ -118,7 +118,7 @@
     background: #40D3DC;
 }
 
-@media (min-width: 2560px)  {
+@media (min-width: 2560px) {
     .slider {
         margin-top: 0px;
         padding-top: 170px;
@@ -130,7 +130,55 @@
         top: 150px;
         left: 36%;
     }
-    
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-top: 170px;
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        top: 280px;
+        left: 11%;
+    }
+    .substSlide {
+        display: none;
+        font-family: 'Medula One', cursive;
+        color: aqua;
+        font-size: 50px;
+        position: relative;
+        top: 320px;
+        margin-left: 60px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        margin-top: 0px;
+        padding-top: 170px;
+        width: 700px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        top: 150px;
+        left: 4%;
+    }
+    .substSlide {
+        display: none;
+        font-family: 'Medula One', cursive;
+        color: aqua;
+        font-size: 50px;
+        position: relative;
+        top: 320px;
+        margin-left: 60px;
+        max-width: 250px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -143,7 +191,8 @@
         color: aqua;
         font-size: 50px;
         position: relative;
-        top: 260px;
-        margin-left: 30px;
+        top: 320px;
+        margin-left: 60px;
+        max-width: 250px;
     }
 }
