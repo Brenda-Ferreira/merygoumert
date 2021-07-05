@@ -9,15 +9,20 @@ function checkGeral(maximo, form, selecao, marmitaitem) {
 
     var Marcados = 1;
     var objCheck = document.forms[formSelecionado].elements[selecaoForm];
-    var obj = document.getElementsByName(marmitaitem);
+    var l = listamarmita.length;
+    var adiciona = true;
 
-    if (!obj.checked) {
-        //var indice = listamarmita.indexOf(marmitaitem);
-        //listamarmita.splice(indice, 1);
+
+    for (var i = 0; i < l; i++) {
+        if (listamarmita[i] == marmitaitem) {
+            var indice = i;
+            adiciona = false;
+
+        }
+    }
+    if (adiciona) {
         listamarmita.unshift(marmitaitem);
-        // listamarmita.unshift("teste");
     } else {
-        var indice = listamarmita.indexOf(marmitaitem);
         listamarmita.splice(indice, 1);
     }
 

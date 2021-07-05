@@ -266,37 +266,46 @@
                                     </div>
 
                                 </form>
+
+
+
                                 <div class="tarja-verde2">
                                     <h2>CARBOIDRATOS</h2>
                                     <p>Pode escolher todos</p>
                                 </div>
-                                <div class="opcao-carboidratos">
-                                    <div class="fex1">
-                                        <input type="checkbox" id="selecao">
-                                        <label id="textosele">Arroz Branco</label>
-                                        <br/>
-                                        <input type="checkbox" id="">
-                                        <label>Feijão</label>
-                                        <br/>
-                                        <input type="checkbox" id="">
-                                        <label>Farofa</label>
 
+                                <form name="carboidratosMarmitaP" width="100%" action="bullet" method="POST">
+
+                                    <div class="opcao-carboidratos">
+                                        <div class="fex1">
+                                            <input type="checkbox" onclick="checkGeral(6,'carboidratosMarmitaP', 'carboidratosP','Arroz Branco')" id="carboidratosP" name="Arroz Branco">
+                                            <label id="textosele">Arroz Branco</label>
+                                            <br/>
+                                            <input type="checkbox" onclick="checkGeral(6,'carboidratosMarmitaP', 'carboidratosP','Feijao')" id="carboidratosP" name="Feijao">
+                                            <label>Feijão</label>
+                                            <br/>
+                                            <input type="checkbox" onclick="checkGeral(6,'carboidratosMarmitaP', 'carboidratosP','Farofa')" id="carboidratosP" name="Farofa">
+                                            <label>Farofa</label>
+
+
+                                        </div>
+
+                                        <div class="fex2">
+                                            <input type="checkbox" onclick="checkGeral(6,'carboidratosMarmitaP', 'carboidratosP','Purê de Batata')" id="carboidratosP" name="Purê de Batata">
+                                            <label>Purê de Batata</label>
+                                            <br/>
+                                            <input type="checkbox" onclick="checkGeral(6,'carboidratosMarmitaP', 'carboidratosP','Purê de Aimpim')" id="carboidratosP" name="Purê de Aimpim">
+                                            <label>Purê de Aimpim</label>
+                                            <br/>
+                                            <input type="checkbox" onclick="checkGeral(6,'carboidratosMarmitaP', 'carboidratosP','Macarrão')" id="carboidratosP" name="Macarrão">
+                                            <label>Macarrão</label>
+                                            <br/>
+                                        </div>
 
                                     </div>
 
-                                    <div class="fex2">
-                                        <input type="checkbox" id="">
-                                        <label>Purê de Batata</label>
-                                        <br/>
-                                        <input type="checkbox" id="">
-                                        <label>Purê de Aimpim</label>
-                                        <br/>
-                                        <input type="checkbox" id="">
-                                        <label>Macarrão</label>
-                                        <br/>
-                                    </div>
+                                </form>
 
-                                </div>
                                 <div class="tarja-verde3">
                                     <h2>SALADA</h2>
                                     <p>Pode escolher até 5 opções</p>
@@ -342,7 +351,7 @@
                                 </form>
                                 <div class="botaos-modal">
 
-                                    <i onClick="window.location='carrinho.html';" class="fas fa-shopping-cart carrinho"></i>
+                                    <i onClick="window.location='carrinho.html'; enviarCarrinho(listamarmita)" class="fas fa-shopping-cart carrinho"></i>
                                 </div>
                             </div>
                             <button class="close-modal">&times;</button>
@@ -384,10 +393,10 @@
 
                                     <div class="opcao-proteinas">
                                         <div class="fex1">
-                                            <input type="checkbox" onclick="checkGeral(2,'proteinaMarmitaM', 'proteinaM')" id="proteinaM">
+                                            <input type="checkbox" onclick="checkGeral(2,'proteinaMarmitaM', 'proteinaM')" id="proteinaM" name='Peito de frango em cubos'>
                                             <label id="textosele">Peito de frango em cubos</label>
                                             <br/>
-                                            <input type="checkbox" onclick="checkGeral(2,'proteinaMarmitaM', 'proteinaM')" id="proteinaM">
+                                            <input type="checkbox" onclick="checkGeral(2,'proteinaMarmitaM', 'proteinaM')" id="proteinaM" name='Iscas de boi'>
                                             <label>Iscas de boi</label>
                                             <br/>
                                             <input type="checkbox" onclick="checkGeral(2,'proteinaMarmitaM', 'proteinaM')" id="proteinaM">
@@ -1280,6 +1289,7 @@
 <script src="js/modal.js"></script>
 <script src="js/menuHambuguer.js"></script>
 <script src="js/checkGeral.js"></script>
+<script src="js/enviarCarrinho.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
